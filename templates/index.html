@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
-
+{% load static %}
 <head>
 	<meta charset="UTF-8">
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
 	<title>课程机构列表 - 慕学在线网</title>
-	<link rel="stylesheet" type="text/css" href="/static/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="/static/css/animate.css">
-	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 
-    <script src="/static/js/jquery.min.js" type="text/javascript"></script>
-    <script src="/static/js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+    <script src="{% static 'js/jquery.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'js/jquery-migrate-1.2.1.min.js' %}" type="text/javascript"></script>
 
 </head>
 <body>
@@ -24,28 +24,31 @@
 					<!--登录后跳转-->
 
 
-                        <a style="color:white" class="fr registerbtn" href="register.html">注册</a>
-                        <a style="color:white" class="fr loginbtn" href="login/">登录</a>
+                        {% if request.user.is_authenticated %}
+                            <div class="personal">
+                            <dl class="user fr">
+                                <dd>bobby<img class="down fr" src="/static/images/top_down.png"/></dd>
+                                <dt><img width="20" height="20" src="/static/media/image/2016/12/default_big_14.png"/></dt>
+                            </dl>
+                            <div class="userdetail">
+                            	<dl>
+	                                <dt><img width="80" height="80" src="/static/media/image/2016/12/default_big_14.png"/></dt>
+	                                <dd>
+	                                    <h2>django</h2>
+	                                    <p>bobby</p>
+	                                </dd>
+                                </dl>
+                                <div class="btn">
+	                                <a class="personcenter fl" href="usercenter-info.html">进入个人中心</a>
+	                                <a class="fr" href="/logout/">退出</a>
+                                </div>
+                            </div>
+                        </div>
+                            {% else %}
+                                <a style="color:white" class="fr registerbtn" href="{% url 'register' %}">注册</a>
+                                <a style="color:white" class="fr loginbtn" href="{% url 'login' %}">登录</a>
+                        {% endif %}
 
-{#						<div class="personal">#}
-{#                            <dl class="user fr">#}
-{#                                <dd>bobby<img class="down fr" src="/static/images/top_down.png"/></dd>#}
-{#                                <dt><img width="20" height="20" src="/static/media/image/2016/12/default_big_14.png"/></dt>#}
-{#                            </dl>#}
-{#                            <div class="userdetail">#}
-{#                            	<dl>#}
-{#	                                <dt><img width="80" height="80" src="/static/media/image/2016/12/default_big_14.png"/></dt>#}
-{#	                                <dd>#}
-{#	                                    <h2>django</h2>#}
-{#	                                    <p>bobby</p>#}
-{#	                                </dd>#}
-{#                                </dl>#}
-{#                                <div class="btn">#}
-{#	                                <a class="personcenter fl" href="usercenter-info.html">进入个人中心</a>#}
-{#	                                <a class="fr" href="/logout/">退出</a>#}
-{#                                </div>#}
-{#                            </div>#}
-{#                        </div>#}
 
 
 				</div>
@@ -567,16 +570,16 @@
         <li class="totop"></li>
     </ul>
 </section>
-<script src="/static/js/selectUi.js" type='text/javascript'></script>
-<script src="/static/js/deco-common.js" type='text/javascript'></script>
-<script type="text/javascript" src="/static/js/plugins/laydate/laydate.js"></script>
-<script src="/static/js/plugins/layer/layer.js"></script>
-<script src="/static/js/plugins/queryCity/js/public.js" type="text/javascript"></script>
-<script src="/static/js/unslider.js" type="text/javascript"></script>
-<script src="/static/js/plugins/jquery.scrollLoading.js"  type="text/javascript"></script>
-<script src="/static/js/deco-common.js"  type="text/javascript"></script>
+<script src="{% static 'js/selectUi.js' %}" type='text/javascript'></script>
+<script src="{% static 'js/deco-common.js' %}" type='text/javascript'></script>
+<script type="text/javascript" src="{% static 'js/plugins/laydate/laydate.js' %}"></script>
+<script src="{% static 'js/plugins/layer/layer.js' %}"></script>
+<script src="{% static 'js/plugins/queryCity/js/public.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/unslider.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/plugins/jquery.scrollLoading.js' %}"  type="text/javascript"></script>
+<script src="{% static 'js/deco-common.js' %}"  type="text/javascript"></script>
 
-    <script type="text/javascript" src="/static/js/index.js"></script>
+    <script type="text/javascript" src="{% static 'js/index.js' %}"></script>
 
 </body>
 </html>

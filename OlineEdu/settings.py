@@ -31,6 +31,9 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+AUTHENTICATION_BACKENDS = (
+    'users.views.CustomBackend',
+)
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -44,7 +47,9 @@ INSTALLED_APPS = [
     'operation',
     'organization',
     'xadmin',
-    'crispy_forms'
+    'crispy_forms',
+    'captcha',
+    'utils',
 ]
 
 AUTH_USER_MODEL = 'users.UserProfile'
@@ -140,3 +145,10 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
+
+EMAIL_HOST = 'smtp.126.com'
+EMAIL_PORT = 25
+EMAIL_HOST_USER = 'dudueasy@126.com'
+EMAIL_HOST_PASSWORD = '6953275j'
+EMAIL_USE_TLS = False
+EMAIL_FROM = 'dudueasy@126.com'
