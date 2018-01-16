@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
-	<title>课程机构列表 - 慕学在线网</title>
+	<title>小学生线网</title>
 	<link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
@@ -81,14 +81,14 @@
 						<ul>
 							<li class="active" ><a href="index.html">首页</a></li>
 							<li >
-								<a href="course-list.html">
+								<a href="">
 									公开课<img class="hot" src="/static/images/nav_hot.png">
 								</a>
 							</li>
 							<li >
 								<a href="teachers-list.html">授课教师</a>
 							</li>
-							<li ><a href="org-list.html">授课机构</a></li>
+							<li ><a href="{% url 'org:org_list' %}">授课机构</a></li>
 						</ul>
 					</div>
 				</div>

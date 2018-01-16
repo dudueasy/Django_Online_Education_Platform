@@ -50,6 +50,8 @@ INSTALLED_APPS = [
     'crispy_forms',
     'captcha',
     'utils',
+    'pure_pagination',
+
 ]
 
 AUTH_USER_MODEL = 'users.UserProfile'
@@ -79,6 +81,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.core.context_processors.media',
             ],
         },
     },
@@ -152,3 +155,13 @@ EMAIL_HOST_USER = 'dudueasy@126.com'
 EMAIL_HOST_PASSWORD = '6953275j'
 EMAIL_USE_TLS = False
 EMAIL_FROM = 'dudueasy@126.com'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+
+#django-pure-pagination setting
+PAGINATION_SETTINGS = {
+    'PAGE_RANGE_DISPLAYED': 10,
+    'MARGIN_PAGES_DISPLAYED': 2,
+    'SHOW_FIRST_PAGE_WHEN_INVALID': True,
+}
