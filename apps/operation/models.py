@@ -65,3 +65,6 @@ class UserCourse(models.Model):
     class Meta:
         verbose_name = u'用户课程'
         verbose_name_plural = verbose_name
+
+    def __unicode__(self):
+        return '%s : %s'%(self.user, self.course)

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-{% load static %}
+{% load staticfiles %}
 <head>
 	<meta charset="UTF-8">
     <meta name="renderer" content="webkit">
@@ -79,9 +79,9 @@
 				<div class="nav">
 					<div class="wp">
 						<ul>
-							<li class="active" ><a href="index.html">首页</a></li>
+							<li class="active" ><a href="{% url 'index' %}">首页</a></li>
 							<li >
-								<a href="">
+								<a href="{% url 'course:course_list' %}">
 									公开课<img class="hot" src="/static/images/nav_hot.png">
 								</a>
 							</li>

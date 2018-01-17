@@ -38,5 +38,19 @@ class CourseListView(View):
         return render(request, 'course-list.html', {
             "all_course": courses,
             'sort': sort,
-            'hot_courses':hot_courses,
+            'hot_courses': hot_courses,
+        })
+
+
+class CourseDetailView(View):
+
+
+    '''课程详情页'''
+    def get(self, request,course_id):
+        current_course = Course.objects.get(id = int(course_id))
+        current_course.click_nums += 1
+        current_course.save()
+
+        return render(request, 'course-detail.html', {
+            'course': current_course,
         })
