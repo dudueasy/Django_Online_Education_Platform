@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 # __author__ = 'apolo'
 # _date_ = '2017/11/29 下午7:02'
+from __future__ import unicode_literals
 
 import xadmin
 from xadmin import views

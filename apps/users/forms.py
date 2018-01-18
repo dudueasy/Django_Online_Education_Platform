@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 # __author__ = 'apolo'
 # _date_ = '2017/12/22 下午10:28'
+from __future__ import unicode_literals
 
 
 from django import forms

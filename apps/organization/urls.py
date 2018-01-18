@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
+from __future__ import unicode_literals
 __author__ = 'apolo'
 _date_ = '2018/1/16 上午2:31'
-
 
 from django.conf.urls import url, include
 from .views import OrgView, AddUserAskView, OrgHomeView, OrgCourseView, OrgDescView, OrgTeacherView, AddFavView

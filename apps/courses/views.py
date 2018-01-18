@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from __future__ import unicode_literals
 __author__ = 'apolo'
 _date_ = '2018/1/17 上午10:19'
 
@@ -6,6 +7,7 @@ from django.shortcuts import render, render_to_response
 from django.views.generic import View
 from django.http import HttpResponse
 from .models import Course
+
 
 from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
 

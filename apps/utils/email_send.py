@@ -1,6 +1,7 @@
 # # -*- coding: utf-8 -*-
-__author__ = 'apolo'
+from __future__ import unicode_literals
 _date_ = '2018/1/12 上午4:27'
+__author__ = 'apolo'
 
 
 from random import randint
