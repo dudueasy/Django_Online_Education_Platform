@@ -15,6 +15,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='course',
             name='category',
-            field=models.CharField(default='\u540e\u7aef\u5f00\u53d1', max_length=20, verbose_name='\u8bfe\u7a0b\u7c7b\u522b'),
+            field=models.CharField(default='\u540e\u7aef\u5f00\u53d1', max_length=200, verbose_name='\u8bfe\u7a0b\u7c7b\u522b'),
         ),
     ]
