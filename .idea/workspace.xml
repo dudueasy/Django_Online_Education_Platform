@@ -4,7 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/apps/organization/models.py" description="city = models.ForeignKey(CityDict, verbose_name=u'..." line="31" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7170f3df-54dc-4a80-85ac-7841538d9c00" name="Default" comment="" />
+    <list default="true" id="7170f3df-54dc-4a80-85ac-7841538d9c00" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Django_database/data.json" afterPath="$PROJECT_DIR$/Django_database/data.json" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
