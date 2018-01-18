@@ -24,8 +24,8 @@ class UserAsk(models.Model):
 
 
 class CourseComments(models.Model):
-    user = models.ForeignKey(UserProfile, verbose_name=u'用户')
-    course = models.ForeignKey(Course, verbose_name=u'课程')
+    user = models.ForeignKey(UserProfile, default=1,verbose_name=u'用户')
+    course = models.ForeignKey(Course, default=1 ,verbose_name=u'课程')
     comments = models.CharField(max_length=20, verbose_name=u'评论')
     add_time = models.DateTimeField(default=datetime.now, verbose_name=u'添加时间')
 
@@ -35,7 +35,7 @@ class CourseComments(models.Model):
 
 
 class UserFavorite(models.Model):
-    user = models.ForeignKey(UserProfile, verbose_name=u'用户')
+    user = models.ForeignKey(UserProfile,default='1', verbose_name=u'用户')
     fav_id = models.IntegerField(default=0, verbose_name=u'数据id')
     fav_type = models.CharField(choices=((1,'课程'),(2,'课程机构'),(3,'讲师')), default=1, max_length=20,verbose_name=u'收藏类型')
     add_time = models.DateTimeField(default=datetime.now, verbose_name=u'添加时间')
@@ -46,7 +46,7 @@ class UserFavorite(models.Model):
 
 
 class UserMessage(models.Model):
-    #用user的值来对应用户id. user = 0 的时候, 表示群发功能.
+    # 用user的值来对应用户id. user = 0 的时候, 表示群发功能.
     user = models.IntegerField(default=0, verbose_name=u'接收用户id')
     message = models.CharField(max_length=500, verbose_name=u'消息内容')
     add_time = models.DateTimeField(default=datetime.now, verbose_name=u'添加时间')
@@ -58,8 +58,8 @@ class UserMessage(models.Model):
 
 
 class UserCourse(models.Model):
-    user = models.ForeignKey(UserProfile, verbose_name=u'用户')
-    course = models.ForeignKey(Course, verbose_name=u'课程')
+    user = models.ForeignKey(UserProfile,default='1', verbose_name=u'用户')
+    course = models.ForeignKey(Course,default='1', verbose_name=u'课程')
     add_time = models.DateTimeField(default=datetime.now, verbose_name=u'添加时间')
 
     class Meta:

@@ -96,7 +96,7 @@ WSGI_APPLICATION = 'OlineEdu.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'online_edu',
+        'NAME': 'online_edu2',
         'USER':'root',
         'PASSWORD':'11111111',
         'HOST':'127.0.0.1',
