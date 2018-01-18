@@ -23,9 +23,13 @@ class Course(models.Model):
     category = models.CharField(default=u'python developing',max_length=100, verbose_name=u'课程类别')
 
 
+
     class Meta:
         verbose_name = u'课程'
         verbose_name_plural = verbose_name
+
+    def get_grade_display(self):
+        return self.get_degree_display()
 
     def get_chapter_nums(self):
         # 获取章节数

@@ -44,9 +44,11 @@ class CourseListView(View):
 
 class CourseDetailView(View):
 
-
     '''课程详情页'''
     def get(self, request,course_id):
+
+
+
         current_course = Course.objects.get(id = int(course_id))
         current_course.click_nums += 1
         current_course.save()
