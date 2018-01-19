@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
+
 __author__ = 'apolo'
 _date_ = '2018/1/17 上午10:19'
 
@@ -7,7 +8,7 @@ from django.shortcuts import render, render_to_response
 from django.views.generic import View
 from django.http import HttpResponse
 from .models import Course
-
+from operation.models import UserFavorite
 
 from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
 
@@ -45,16 +46,37 @@ class CourseListView(View):
 
 
 class CourseDetailView(View):
-
     '''课程详情页'''
-    def get(self, request,course_id):
 
+    def get(self, request, course_id):
 
+        course_has_fav = False
+        courseorg_has_fav = False
 
-        current_course = Course.objects.get(id = int(course_id))
+        current_course = Course.objects.get(id=int(course_id))
         current_course.click_nums += 1
         current_course.save()
 
+        # 展示机构收藏按钮状态
+        if request.user.is_authenticated():
+            if UserFavorite.objects.filter(fav_id=current_course.course_org.id, fav_type=1):
+                courseorg_has_fav = True
+
+                # 展示课程收藏按钮状态
+            if UserFavorite.objects.filter(fav_id=current_course.id, fav_type=2):
+                course_has_fav = True
+
+        tag = current_course.tag
+        if tag:
+            related_courses = Course.objects.filter(tag=tag)[:1]
+            if related_courses == current_course:
+                related_courses = Course.objects.filter(tag=tag)[1:2]
+        else:
+            related_courses = []
+
         return render(request, 'course-detail.html', {
             'course': current_course,
+            'related_course': related_courses,
+            'courseorg_has_fav': courseorg_has_fav,
+            'course_has_fav': course_has_fav,
         })

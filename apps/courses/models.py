@@ -23,7 +23,6 @@ class Course(models.Model):
     category = models.CharField(default=u'python developing',max_length=100, verbose_name=u'课程类别')
 
 
-
     class Meta:
         verbose_name = u'课程'
         verbose_name_plural = verbose_name
@@ -37,8 +36,6 @@ class Course(models.Model):
 
     def get_learn_users(self):
         return self.usercourse_set.all()[:5]
-
-
 
     def __unicode__(self):
         return self.name
