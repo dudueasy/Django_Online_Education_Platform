@@ -11,8 +11,8 @@
     "model": "sessions.session",
     "pk": "jap13ob29f0ne3kxxy1tjv8hvkwchols",
     "fields": {
-        "session_data": "MDE0MzAxNzFiNzNiYWMxMjUzZTlkOGY2N2FjY2RlNDZlOThhMTZlMjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiTElTVF9RVUVSWSI6W1siY291cnNlcyIsImxlc3NvbiJdLCJfcmVsX2NvdXJzZV9faWRfX2V4YWN0PTEiXSwiX2F1dGhfdXNlcl9oYXNoIjoiY2Q1M2Y5NDM4NmZjNmJjYjQzMjMyYTRmYjgxM2Y5ZTE2Nzc3Y2ExMiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6InVzZXJzLnZpZXdzLkN1c3RvbUJhY2tlbmQifQ==",
-        "expire_date": "2018-02-03T11:35:33.281"
+        "session_data": "YmE3MDJhM2YzMWZiYWU2ZTNkYzU1YzkyZDA5OTg5MzgxOGM3NGU5Zjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiTElTVF9RVUVSWSI6W1siY291cnNlcyIsImNvdXJzZSJdLCIiXSwiX2F1dGhfdXNlcl9oYXNoIjoiY2Q1M2Y5NDM4NmZjNmJjYjQzMjMyYTRmYjgxM2Y5ZTE2Nzc3Y2ExMiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6InVzZXJzLnZpZXdzLkN1c3RvbUJhY2tlbmQifQ==",
+        "expire_date": "2018-02-03T13:18:22.130"
     }
 },
 {
@@ -97,10 +97,13 @@
         "students": 100,
         "fav_nums": 20,
         "image": "courses/2018/01/\u4e0b\u8f7d_zHJZKzn.png",
-        "click_nums": 16,
+        "click_nums": 20,
         "add_time": "2018-01-19T01:45:00",
         "tag": "python",
-        "category": "python developing"
+        "category": "python developing",
+        "teacher": 1,
+        "need_to_know": "\u9700\u8981\u6309\u65f6\u5b8c\u6210\u8bfe\u7a0b\u4e2d\u5e03\u7f6e\u7684\u4efb\u52a1",
+        "teacher_hint": "\u8bf7\u52a0\u5165\u6211\u4eec\u7684qq\u7fa4 :111"
     }
 },
 {
@@ -119,7 +122,10 @@
         "click_nums": 1,
         "add_time": "2018-01-19T01:50:00",
         "tag": "python",
-        "category": "python developing"
+        "category": "python developing",
+        "teacher": 2,
+        "need_to_know": null,
+        "teacher_hint": null
     }
 },
 {
@@ -138,7 +144,10 @@
         "click_nums": 0,
         "add_time": "2018-01-19T01:50:00",
         "tag": "python",
-        "category": "python developing"
+        "category": "python developing",
+        "teacher": 3,
+        "need_to_know": null,
+        "teacher_hint": null
     }
 },
 {
@@ -154,10 +163,13 @@
         "students": 100,
         "fav_nums": 0,
         "image": "courses/2018/01/\u4e0b\u8f7d_1.png",
-        "click_nums": 7,
+        "click_nums": 10,
         "add_time": "2018-01-19T01:50:00",
         "tag": "django",
-        "category": "django developing"
+        "category": "django developing",
+        "teacher": 4,
+        "need_to_know": null,
+        "teacher_hint": null
     }
 },
 {
@@ -176,7 +188,10 @@
         "click_nums": 1,
         "add_time": "2018-01-19T01:50:00",
         "tag": "PHP",
-        "category": "PHP developing"
+        "category": "PHP developing",
+        "teacher": 5,
+        "need_to_know": null,
+        "teacher_hint": null
     }
 },
 {
@@ -195,7 +210,10 @@
         "click_nums": 0,
         "add_time": "2018-01-19T01:51:00",
         "tag": "JavaScript",
-        "category": "JavaScript developing"
+        "category": "JavaScript developing",
+        "teacher": 6,
+        "need_to_know": null,
+        "teacher_hint": null
     }
 },
 {
@@ -214,7 +232,10 @@
         "click_nums": 1,
         "add_time": "2018-01-19T01:51:00",
         "tag": "python",
-        "category": "python developing"
+        "category": "python developing",
+        "teacher": 7,
+        "need_to_know": null,
+        "teacher_hint": null
     }
 },
 {
@@ -230,10 +251,13 @@
         "students": 100,
         "fav_nums": 0,
         "image": "courses/2018/01/django_es_facil.jpeg",
-        "click_nums": 3,
+        "click_nums": 4,
         "add_time": "2018-01-19T01:51:00",
         "tag": "django",
-        "category": "django developing"
+        "category": "django developing",
+        "teacher": 8,
+        "need_to_know": null,
+        "teacher_hint": null
     }
 },
 {
@@ -252,7 +276,10 @@
         "click_nums": 0,
         "add_time": "2018-01-19T01:51:00",
         "tag": "JavaScript",
-        "category": "jQuery developing"
+        "category": "jQuery developing",
+        "teacher": 9,
+        "need_to_know": null,
+        "teacher_hint": null
     }
 },
 {
@@ -271,7 +298,10 @@
         "click_nums": 0,
         "add_time": "2018-01-19T01:51:00",
         "tag": "PHP",
-        "category": "PHP developing"
+        "category": "PHP developing",
+        "teacher": 10,
+        "need_to_know": null,
+        "teacher_hint": null
     }
 },
 {
@@ -290,7 +320,10 @@
         "click_nums": 4,
         "add_time": "2018-01-19T01:54:00",
         "tag": "django",
-        "category": "Django developing"
+        "category": "Django developing",
+        "teacher": 11,
+        "need_to_know": null,
+        "teacher_hint": null
     }
 },
 {
@@ -306,10 +339,13 @@
         "students": 20,
         "fav_nums": 0,
         "image": "courses/2018/01/django_NHWvTh2.jpeg",
-        "click_nums": 20,
+        "click_nums": 24,
         "add_time": "2018-01-19T01:55:00",
         "tag": "django",
-        "category": "Django developing"
+        "category": "Django developing",
+        "teacher": 12,
+        "need_to_know": null,
+        "teacher_hint": null
     }
 },
 {
@@ -317,7 +353,7 @@
     "pk": 1,
     "fields": {
         "course": 1,
-        "name": "\u7b2c\u4e00\u7ae0 \u57fa\u7840\u77e5\u8bc6",
+        "name": "\u7b2c\u4e00\u7ae0 python\u5165\u95e8\u57fa\u7840\u77e5\u8bc6",
         "add_time": "2018-01-20T11:31:00"
     }
 },
@@ -326,7 +362,7 @@
     "pk": 2,
     "fields": {
         "course": 2,
-        "name": "\u7b2c\u4e00\u7ae0 \u57fa\u7840\u77e5\u8bc6",
+        "name": "\u7b2c\u4e00\u7ae0 python\u8fdb\u9636\u57fa\u7840\u77e5\u8bc6",
         "add_time": "2018-01-20T11:31:00"
     }
 },
@@ -335,7 +371,7 @@
     "pk": 3,
     "fields": {
         "course": 3,
-        "name": "\u7b2c\u4e00\u7ae0 \u57fa\u7840\u77e5\u8bc6",
+        "name": "\u7b2c\u4e00\u7ae0 python\u9ad8\u7ea7\u57fa\u7840\u77e5\u8bc6",
         "add_time": "2018-01-20T11:31:00"
     }
 },
@@ -344,7 +380,7 @@
     "pk": 4,
     "fields": {
         "course": 4,
-        "name": "\u7b2c\u4e00\u7ae0 \u57fa\u7840\u77e5\u8bc6",
+        "name": "\u7b2c\u4e00\u7ae0 django\u5165\u95e8 \u57fa\u7840\u77e5\u8bc6",
         "add_time": "2018-01-20T11:31:00"
     }
 },
@@ -353,7 +389,7 @@
     "pk": 5,
     "fields": {
         "course": 5,
-        "name": "\u7b2c\u4e00\u7ae0 \u57fa\u7840\u77e5\u8bc6",
+        "name": "\u7b2c\u4e00\u7ae0 PHP\u5165\u95e8\u57fa\u7840\u77e5\u8bc6",
         "add_time": "2018-01-20T11:31:00"
     }
 },
@@ -362,7 +398,7 @@
     "pk": 16,
     "fields": {
         "course": 6,
-        "name": "\u7b2c\u4e00\u7ae0 \u57fa\u7840\u77e5\u8bc6",
+        "name": "\u7b2c\u4e00\u7ae0 JavaScript\u5165\u95e8\u57fa\u7840\u77e5\u8bc6",
         "add_time": "2018-01-20T11:31:00"
     }
 },
@@ -371,7 +407,7 @@
     "pk": 17,
     "fields": {
         "course": 7,
-        "name": "\u7b2c\u4e00\u7ae0 \u57fa\u7840\u77e5\u8bc6",
+        "name": "\u7b2c\u4e00\u7ae0 python\u5b9e\u8df5\u57fa\u7840\u77e5\u8bc6",
         "add_time": "2018-01-20T11:31:00"
     }
 },
@@ -380,7 +416,7 @@
     "pk": 18,
     "fields": {
         "course": 8,
-        "name": "\u7b2c\u4e00\u7ae0 \u57fa\u7840\u77e5\u8bc6",
+        "name": "\u7b2c\u4e00\u7ae0 django\u8fdb\u9636\u57fa\u7840\u77e5\u8bc6",
         "add_time": "2018-01-20T11:31:00"
     }
 },
@@ -389,7 +425,7 @@
     "pk": 19,
     "fields": {
         "course": 9,
-        "name": "\u7b2c\u4e00\u7ae0 \u57fa\u7840\u77e5\u8bc6",
+        "name": "\u7b2c\u4e00\u7ae0 jQuery\u5165\u95e8\u57fa\u7840\u77e5\u8bc6",
         "add_time": "2018-01-20T11:31:00"
     }
 },
@@ -398,7 +434,7 @@
     "pk": 20,
     "fields": {
         "course": 10,
-        "name": "\u7b2c\u4e00\u7ae0 \u57fa\u7840\u77e5\u8bc6",
+        "name": "\u7b2c\u4e00\u7ae0 PHP\u8fdb\u9636\u57fa\u7840\u77e5\u8bc6",
         "add_time": "2018-01-20T11:31:00"
     }
 },
@@ -407,7 +443,7 @@
     "pk": 21,
     "fields": {
         "course": 11,
-        "name": "\u7b2c\u4e00\u7ae0 \u57fa\u7840\u77e5\u8bc6",
+        "name": "\u7b2c\u4e00\u7ae0 Django\u9ad8\u7ea7\u57fa\u7840\u77e5\u8bc6",
         "add_time": "2018-01-20T11:31:00"
     }
 },
@@ -416,7 +452,7 @@
     "pk": 22,
     "fields": {
         "course": 12,
-        "name": "\u7b2c\u4e00\u7ae0 \u57fa\u7840\u77e5\u8bc6",
+        "name": "\u7b2c\u4e00\u7ae0 Django\u5b9e\u8df5\u57fa\u7840\u77e5\u8bc6",
         "add_time": "2018-01-20T11:31:00"
     }
 },
@@ -425,8 +461,122 @@
     "pk": 26,
     "fields": {
         "course": 1,
-        "name": "\u7b2c\u4e8c\u7ae0 \u8fdb\u9636\u5f00\u53d1",
+        "name": "\u7b2c\u4e8c\u7ae0 python\u5165\u95e8\u8fdb\u9636\u5f00\u53d1",
         "add_time": "2018-01-20T11:35:00"
+    }
+},
+{
+    "model": "courses.video",
+    "pk": 1,
+    "fields": {
+        "lesson": 1,
+        "name": "1.1 helloworld",
+        "add_time": "2018-01-20T11:43:00",
+        "url": "https://dudueasy.github.io/xyz/cv/",
+        "learn_times": 0
+    }
+},
+{
+    "model": "courses.video",
+    "pk": 2,
+    "fields": {
+        "lesson": 1,
+        "name": "1.2 \u57fa\u672c\u6982\u5ff5",
+        "add_time": "2018-01-20T11:47:00",
+        "url": "https://dudueasy.github.io/xyz/cv/",
+        "learn_times": 0
+    }
+},
+{
+    "model": "courses.video",
+    "pk": 3,
+    "fields": {
+        "lesson": 26,
+        "name": "2.1 test",
+        "add_time": "2018-01-20T11:47:00",
+        "url": "https://dudueasy.github.io/xyz/cv/",
+        "learn_times": 0
+    }
+},
+{
+    "model": "courses.video",
+    "pk": 4,
+    "fields": {
+        "lesson": 26,
+        "name": "2.2 test",
+        "add_time": "2018-01-20T11:48:00",
+        "url": "https://dudueasy.github.io/xyz/cv/",
+        "learn_times": 0
+    }
+},
+{
+    "model": "courses.courseresource",
+    "pk": 1,
+    "fields": {
+        "course": 1,
+        "name": "\u524d\u7aef\u9875\u9762",
+        "add_time": "2018-01-20T12:49:00",
+        "download": "course/resource/2018/01/\u5c0f\u91d1.png"
+    }
+},
+{
+    "model": "operation.coursecomments",
+    "pk": 1,
+    "fields": {
+        "user": [
+            "apolo"
+        ],
+        "course": 1,
+        "comments": "we",
+        "add_time": "2018-01-20T16:33:08.159"
+    }
+},
+{
+    "model": "operation.coursecomments",
+    "pk": 2,
+    "fields": {
+        "user": [
+            "apolo"
+        ],
+        "course": 1,
+        "comments": "we",
+        "add_time": "2018-01-20T16:33:39.016"
+    }
+},
+{
+    "model": "operation.coursecomments",
+    "pk": 3,
+    "fields": {
+        "user": [
+            "apolo"
+        ],
+        "course": 1,
+        "comments": "we",
+        "add_time": "2018-01-20T16:34:31.698"
+    }
+},
+{
+    "model": "operation.coursecomments",
+    "pk": 4,
+    "fields": {
+        "user": [
+            "apolo"
+        ],
+        "course": 1,
+        "comments": "we",
+        "add_time": "2018-01-20T16:34:37.331"
+    }
+},
+{
+    "model": "operation.coursecomments",
+    "pk": 5,
+    "fields": {
+        "user": [
+            "apolo"
+        ],
+        "course": 1,
+        "comments": "23",
+        "add_time": "2018-01-20T16:35:27.179"
     }
 },
 {
@@ -2178,6 +2328,576 @@
         "object_repr": "Lesson object",
         "action_flag": "create",
         "message": "\u5df2\u6dfb\u52a0\u3002"
+    }
+},
+{
+    "model": "xadmin.log",
+    "pk": 65,
+    "fields": {
+        "action_time": "2018-01-20T11:43:29.964",
+        "user": [
+            "apolo"
+        ],
+        "ip_addr": "127.0.0.1",
+        "content_type": [
+            "courses",
+            "video"
+        ],
+        "object_id": "1",
+        "object_repr": "1.1 helloworld",
+        "action_flag": "create",
+        "message": "\u5df2\u6dfb\u52a0\u3002"
+    }
+},
+{
+    "model": "xadmin.log",
+    "pk": 66,
+    "fields": {
+        "action_time": "2018-01-20T11:44:10.051",
+        "user": [
+            "apolo"
+        ],
+        "ip_addr": "127.0.0.1",
+        "content_type": [
+            "courses",
+            "video"
+        ],
+        "object_id": "1",
+        "object_repr": "1.1 helloworld",
+        "action_flag": "change",
+        "message": "\u6ca1\u6709\u5b57\u6bb5\u88ab\u4fee\u6539\u3002"
+    }
+},
+{
+    "model": "xadmin.log",
+    "pk": 67,
+    "fields": {
+        "action_time": "2018-01-20T11:44:38.550",
+        "user": [
+            "apolo"
+        ],
+        "ip_addr": "127.0.0.1",
+        "content_type": [
+            "courses",
+            "lesson"
+        ],
+        "object_id": "1",
+        "object_repr": "\u7b2c\u4e00\u7ae0 python\u5165\u95e8\u57fa\u7840\u77e5\u8bc6",
+        "action_flag": "change",
+        "message": "\u5df2\u4fee\u6539 name \u3002"
+    }
+},
+{
+    "model": "xadmin.log",
+    "pk": 68,
+    "fields": {
+        "action_time": "2018-01-20T11:44:51.423",
+        "user": [
+            "apolo"
+        ],
+        "ip_addr": "127.0.0.1",
+        "content_type": [
+            "courses",
+            "lesson"
+        ],
+        "object_id": "2",
+        "object_repr": "\u7b2c\u4e00\u7ae0 python\u8fdb\u9636\u57fa\u7840\u77e5\u8bc6",
+        "action_flag": "change",
+        "message": "\u5df2\u4fee\u6539 name \u3002"
+    }
+},
+{
+    "model": "xadmin.log",
+    "pk": 69,
+    "fields": {
+        "action_time": "2018-01-20T11:45:01.173",
+        "user": [
+            "apolo"
+        ],
+        "ip_addr": "127.0.0.1",
+        "content_type": [
+            "courses",
+            "lesson"
+        ],
+        "object_id": "3",
+        "object_repr": "\u7b2c\u4e00\u7ae0 python\u9ad8\u7ea7\u57fa\u7840\u77e5\u8bc6",
+        "action_flag": "change",
+        "message": "\u5df2\u4fee\u6539 name \u3002"
+    }
+},
+{
+    "model": "xadmin.log",
+    "pk": 70,
+    "fields": {
+        "action_time": "2018-01-20T11:45:10.656",
+        "user": [
+            "apolo"
+        ],
+        "ip_addr": "127.0.0.1",
+        "content_type": [
+            "courses",
+            "lesson"
+        ],
+        "object_id": "4",
+        "object_repr": "\u7b2c\u4e00\u7ae0 django\u5165\u95e8 \u57fa\u7840\u77e5\u8bc6",
+        "action_flag": "change",
+        "message": "\u5df2\u4fee\u6539 name \u3002"
+    }
+},
+{
+    "model": "xadmin.log",
+    "pk": 71,
+    "fields": {
+        "action_time": "2018-01-20T11:45:18.970",
+        "user": [
+            "apolo"
+        ],
+        "ip_addr": "127.0.0.1",
+        "content_type": [
+            "courses",
+            "lesson"
+        ],
+        "object_id": "5",
+        "object_repr": "\u7b2c\u4e00\u7ae0 PHP\u5165\u95e8\u57fa\u7840\u77e5\u8bc6",
+        "action_flag": "change",
+        "message": "\u5df2\u4fee\u6539 name \u3002"
+    }
+},
+{
+    "model": "xadmin.log",
+    "pk": 72,
+    "fields": {
+        "action_time": "2018-01-20T11:45:32.578",
+        "user": [
+            "apolo"
+        ],
+        "ip_addr": "127.0.0.1",
+        "content_type": [
+            "courses",
+            "lesson"
+        ],
+        "object_id": "16",
+        "object_repr": "\u7b2c\u4e00\u7ae0 JavaScript\u5165\u95e8\u57fa\u7840\u77e5\u8bc6",
+        "action_flag": "change",
+        "message": "\u5df2\u4fee\u6539 name \u3002"
+    }
+},
+{
+    "model": "xadmin.log",
+    "pk": 73,
+    "fields": {
+        "action_time": "2018-01-20T11:45:41.204",
+        "user": [
+            "apolo"
+        ],
+        "ip_addr": "127.0.0.1",
+        "content_type": [
+            "courses",
+            "lesson"
+        ],
+        "object_id": "17",
+        "object_repr": "\u7b2c\u4e00\u7ae0 python\u5b9e\u8df5\u57fa\u7840\u77e5\u8bc6",
+        "action_flag": "change",
+        "message": "\u5df2\u4fee\u6539 name \u3002"
+    }
+},
+{
+    "model": "xadmin.log",
+    "pk": 74,
+    "fields": {
+        "action_time": "2018-01-20T11:45:49.349",
+        "user": [
+            "apolo"
+        ],
+        "ip_addr": "127.0.0.1",
+        "content_type": [
+            "courses",
+            "lesson"
+        ],
+        "object_id": "18",
+        "object_repr": "\u7b2c\u4e00\u7ae0 django\u8fdb\u9636\u57fa\u7840\u77e5\u8bc6",
+        "action_flag": "change",
+        "message": "\u5df2\u4fee\u6539 name \u3002"
+    }
+},
+{
+    "model": "xadmin.log",
+    "pk": 75,
+    "fields": {
+        "action_time": "2018-01-20T11:45:59.477",
+        "user": [
+            "apolo"
+        ],
+        "ip_addr": "127.0.0.1",
+        "content_type": [
+            "courses",
+            "lesson"
+        ],
+        "object_id": "19",
+        "object_repr": "\u7b2c\u4e00\u7ae0 jQuery\u5165\u95e8\u57fa\u7840\u77e5\u8bc6",
+        "action_flag": "change",
+        "message": "\u5df2\u4fee\u6539 name \u3002"
+    }
+},
+{
+    "model": "xadmin.log",
+    "pk": 76,
+    "fields": {
+        "action_time": "2018-01-20T11:46:10.525",
+        "user": [
+            "apolo"
+        ],
+        "ip_addr": "127.0.0.1",
+        "content_type": [
+            "courses",
+            "lesson"
+        ],
+        "object_id": "21",
+        "object_repr": "\u7b2c\u4e00\u7ae0 Django\u9ad8\u7ea7\u57fa\u7840\u77e5\u8bc6",
+        "action_flag": "change",
+        "message": "\u5df2\u4fee\u6539 name \u3002"
+    }
+},
+{
+    "model": "xadmin.log",
+    "pk": 77,
+    "fields": {
+        "action_time": "2018-01-20T11:46:21.387",
+        "user": [
+            "apolo"
+        ],
+        "ip_addr": "127.0.0.1",
+        "content_type": [
+            "courses",
+            "lesson"
+        ],
+        "object_id": "20",
+        "object_repr": "\u7b2c\u4e00\u7ae0 PHP\u8fdb\u9636\u57fa\u7840\u77e5\u8bc6",
+        "action_flag": "change",
+        "message": "\u5df2\u4fee\u6539 name \u3002"
+    }
+},
+{
+    "model": "xadmin.log",
+    "pk": 78,
+    "fields": {
+        "action_time": "2018-01-20T11:46:32.460",
+        "user": [
+            "apolo"
+        ],
+        "ip_addr": "127.0.0.1",
+        "content_type": [
+            "courses",
+            "lesson"
+        ],
+        "object_id": "22",
+        "object_repr": "\u7b2c\u4e00\u7ae0 Django\u5b9e\u8df5\u57fa\u7840\u77e5\u8bc6",
+        "action_flag": "change",
+        "message": "\u5df2\u4fee\u6539 name \u3002"
+    }
+},
+{
+    "model": "xadmin.log",
+    "pk": 79,
+    "fields": {
+        "action_time": "2018-01-20T11:46:39.477",
+        "user": [
+            "apolo"
+        ],
+        "ip_addr": "127.0.0.1",
+        "content_type": [
+            "courses",
+            "lesson"
+        ],
+        "object_id": "26",
+        "object_repr": "\u7b2c\u4e8c\u7ae0 python\u5165\u95e8\u8fdb\u9636\u5f00\u53d1",
+        "action_flag": "change",
+        "message": "\u5df2\u4fee\u6539 name \u3002"
+    }
+},
+{
+    "model": "xadmin.log",
+    "pk": 80,
+    "fields": {
+        "action_time": "2018-01-20T11:47:27.312",
+        "user": [
+            "apolo"
+        ],
+        "ip_addr": "127.0.0.1",
+        "content_type": [
+            "courses",
+            "video"
+        ],
+        "object_id": "2",
+        "object_repr": "1.2 \u57fa\u672c\u6982\u5ff5",
+        "action_flag": "create",
+        "message": "\u5df2\u6dfb\u52a0\u3002"
+    }
+},
+{
+    "model": "xadmin.log",
+    "pk": 81,
+    "fields": {
+        "action_time": "2018-01-20T11:47:59.057",
+        "user": [
+            "apolo"
+        ],
+        "ip_addr": "127.0.0.1",
+        "content_type": [
+            "courses",
+            "video"
+        ],
+        "object_id": "3",
+        "object_repr": "2.1 test",
+        "action_flag": "create",
+        "message": "\u5df2\u6dfb\u52a0\u3002"
+    }
+},
+{
+    "model": "xadmin.log",
+    "pk": 82,
+    "fields": {
+        "action_time": "2018-01-20T11:48:16.952",
+        "user": [
+            "apolo"
+        ],
+        "ip_addr": "127.0.0.1",
+        "content_type": [
+            "courses",
+            "video"
+        ],
+        "object_id": "4",
+        "object_repr": "2.2 test",
+        "action_flag": "create",
+        "message": "\u5df2\u6dfb\u52a0\u3002"
+    }
+},
+{
+    "model": "xadmin.log",
+    "pk": 83,
+    "fields": {
+        "action_time": "2018-01-20T12:24:05.610",
+        "user": [
+            "apolo"
+        ],
+        "ip_addr": "127.0.0.1",
+        "content_type": [
+            "courses",
+            "video"
+        ],
+        "object_id": "1",
+        "object_repr": "1.1 helloworld",
+        "action_flag": "change",
+        "message": "\u5df2\u4fee\u6539 url \u3002"
+    }
+},
+{
+    "model": "xadmin.log",
+    "pk": 84,
+    "fields": {
+        "action_time": "2018-01-20T12:24:09.932",
+        "user": [
+            "apolo"
+        ],
+        "ip_addr": "127.0.0.1",
+        "content_type": [
+            "courses",
+            "video"
+        ],
+        "object_id": "2",
+        "object_repr": "1.2 \u57fa\u672c\u6982\u5ff5",
+        "action_flag": "change",
+        "message": "\u5df2\u4fee\u6539 url \u3002"
+    }
+},
+{
+    "model": "xadmin.log",
+    "pk": 85,
+    "fields": {
+        "action_time": "2018-01-20T12:24:14.700",
+        "user": [
+            "apolo"
+        ],
+        "ip_addr": "127.0.0.1",
+        "content_type": [
+            "courses",
+            "video"
+        ],
+        "object_id": "3",
+        "object_repr": "2.1 test",
+        "action_flag": "change",
+        "message": "\u5df2\u4fee\u6539 url \u3002"
+    }
+},
+{
+    "model": "xadmin.log",
+    "pk": 86,
+    "fields": {
+        "action_time": "2018-01-20T12:24:17.695",
+        "user": [
+            "apolo"
+        ],
+        "ip_addr": "127.0.0.1",
+        "content_type": [
+            "courses",
+            "video"
+        ],
+        "object_id": "4",
+        "object_repr": "2.2 test",
+        "action_flag": "change",
+        "message": "\u5df2\u4fee\u6539 url \u3002"
+    }
+},
+{
+    "model": "xadmin.log",
+    "pk": 87,
+    "fields": {
+        "action_time": "2018-01-20T12:25:55.972",
+        "user": [
+            "apolo"
+        ],
+        "ip_addr": "127.0.0.1",
+        "content_type": [
+            "courses",
+            "video"
+        ],
+        "object_id": "1",
+        "object_repr": "1.1 helloworld",
+        "action_flag": "change",
+        "message": "\u5df2\u4fee\u6539 url \u3002"
+    }
+},
+{
+    "model": "xadmin.log",
+    "pk": 88,
+    "fields": {
+        "action_time": "2018-01-20T12:25:58.737",
+        "user": [
+            "apolo"
+        ],
+        "ip_addr": "127.0.0.1",
+        "content_type": [
+            "courses",
+            "video"
+        ],
+        "object_id": "2",
+        "object_repr": "1.2 \u57fa\u672c\u6982\u5ff5",
+        "action_flag": "change",
+        "message": "\u5df2\u4fee\u6539 url \u3002"
+    }
+},
+{
+    "model": "xadmin.log",
+    "pk": 89,
+    "fields": {
+        "action_time": "2018-01-20T12:26:05.129",
+        "user": [
+            "apolo"
+        ],
+        "ip_addr": "127.0.0.1",
+        "content_type": [
+            "courses",
+            "video"
+        ],
+        "object_id": "2",
+        "object_repr": "1.2 \u57fa\u672c\u6982\u5ff5",
+        "action_flag": "change",
+        "message": "\u5df2\u4fee\u6539 url \u3002"
+    }
+},
+{
+    "model": "xadmin.log",
+    "pk": 90,
+    "fields": {
+        "action_time": "2018-01-20T12:26:08.178",
+        "user": [
+            "apolo"
+        ],
+        "ip_addr": "127.0.0.1",
+        "content_type": [
+            "courses",
+            "video"
+        ],
+        "object_id": "3",
+        "object_repr": "2.1 test",
+        "action_flag": "change",
+        "message": "\u5df2\u4fee\u6539 url \u3002"
+    }
+},
+{
+    "model": "xadmin.log",
+    "pk": 91,
+    "fields": {
+        "action_time": "2018-01-20T12:26:10.854",
+        "user": [
+            "apolo"
+        ],
+        "ip_addr": "127.0.0.1",
+        "content_type": [
+            "courses",
+            "video"
+        ],
+        "object_id": "4",
+        "object_repr": "2.2 test",
+        "action_flag": "change",
+        "message": "\u5df2\u4fee\u6539 url \u3002"
+    }
+},
+{
+    "model": "xadmin.log",
+    "pk": 92,
+    "fields": {
+        "action_time": "2018-01-20T12:51:17.002",
+        "user": [
+            "apolo"
+        ],
+        "ip_addr": "127.0.0.1",
+        "content_type": [
+            "courses",
+            "courseresource"
+        ],
+        "object_id": "1",
+        "object_repr": "CourseResource object",
+        "action_flag": "create",
+        "message": "\u5df2\u6dfb\u52a0\u3002"
+    }
+},
+{
+    "model": "xadmin.log",
+    "pk": 93,
+    "fields": {
+        "action_time": "2018-01-20T13:09:46.336",
+        "user": [
+            "apolo"
+        ],
+        "ip_addr": "127.0.0.1",
+        "content_type": [
+            "courses",
+            "course"
+        ],
+        "object_id": "1",
+        "object_repr": "python\u5165\u95e8",
+        "action_flag": "change",
+        "message": "\u5df2\u4fee\u6539 teacher \u3002"
+    }
+},
+{
+    "model": "xadmin.log",
+    "pk": 94,
+    "fields": {
+        "action_time": "2018-01-20T13:18:21.857",
+        "user": [
+            "apolo"
+        ],
+        "ip_addr": "127.0.0.1",
+        "content_type": [
+            "courses",
+            "course"
+        ],
+        "object_id": "1",
+        "object_repr": "python\u5165\u95e8",
+        "action_flag": "change",
+        "message": "\u5df2\u4fee\u6539 need_to_know \u548c teacher_hint \u3002"
     }
 }
 ]

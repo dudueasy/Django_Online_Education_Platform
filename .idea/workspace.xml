@@ -5,18 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7170f3df-54dc-4a80-85ac-7841538d9c00" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/courses/migrations/0002_video_url.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/courses/migrations/0003_lesson_learn_times.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/courses/migrations/0004_auto_20180120_1233.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/courses/migrations/0005_course_teacher.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/courses/migrations/0006_auto_20180120_1315.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OlineEdu/urls.py" afterPath="$PROJECT_DIR$/OlineEdu/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/courses/adminx.py" afterPath="$PROJECT_DIR$/apps/courses/adminx.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/courses/models.py" afterPath="$PROJECT_DIR$/apps/courses/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/courses/urls.py" afterPath="$PROJECT_DIR$/apps/courses/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/courses/views.py" afterPath="$PROJECT_DIR$/apps/courses/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/users/models.py" afterPath="$PROJECT_DIR$/apps/users/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/course-comment.html" afterPath="$PROJECT_DIR$/templates/course-comment.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/course-detail.html" afterPath="$PROJECT_DIR$/templates/course-detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/login.html" afterPath="$PROJECT_DIR$/templates/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/org-detail-course.html" afterPath="$PROJECT_DIR$/templates/org-detail-course.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/org_base.html" afterPath="$PROJECT_DIR$/templates/org_base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/course-video.html" afterPath="$PROJECT_DIR$/templates/course-video.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,12 +45,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/organization/models.py">
+      <file leaf-file-name="course-video.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/course-video.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="140">
+              <caret line="165" column="0" lean-forward="false" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#ul#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#for#3;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="course-comment.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/course-comment.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="157" column="0" lean-forward="false" selection-start-line="157" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
+              <folding>
+                <element signature="n#block#1;n#!!top" expanded="false" />
+                <element signature="n#block#2;n#!!top" expanded="false" />
+                <element signature="e#1243#2371#0#HTML" expanded="false" />
+                <element signature="e#1282#2356#0#HTML" expanded="false" />
+                <element signature="e#1396#1492#0#HTML" expanded="false" />
+                <element signature="e#7721#7863#0#HTML" expanded="false" />
+                <element signature="e#8189#9033#0#HTML" expanded="false" />
+                <element signature="n#for#2;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -58,10 +83,10 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/courses/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+            <state relative-caret-position="-262">
+              <caret line="79" column="12" lean-forward="false" selection-start-line="79" selection-start-column="12" selection-end-line="79" selection-end-column="12" />
               <folding>
-                <element signature="e#445#1186#0" expanded="false" />
+                <element signature="e#486#1227#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -70,190 +95,30 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/operation/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+            <state relative-caret-position="129">
+              <caret line="59" column="6" lean-forward="false" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="email_send.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/utils/email_send.py">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/users/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="43" column="66" lean-forward="false" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="66" />
+            <state relative-caret-position="195">
+              <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="course-detail.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/course-detail.html">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/courses/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="101" column="30" lean-forward="true" selection-start-line="101" selection-start-column="30" selection-end-line="101" selection-end-column="30" />
+            <state relative-caret-position="201">
+              <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="9" />
               <folding>
-                <element signature="n#block#0;n#!!top" expanded="false" />
-                <element signature="n#block#1;n#!!top" expanded="false" />
-                <element signature="n#script#0;n#!!top" expanded="false" />
-                <element signature="e#189#1054#0#HTML" expanded="false" />
-                <element signature="e#210#1042#0#HTML" expanded="false" />
-                <element signature="e#467#563#0#HTML" expanded="false" />
-                <element signature="e#606#1027#0#HTML" expanded="false" />
-                <element signature="e#655#898#0#HTML" expanded="false" />
-                <element signature="e#706#798#0#HTML" expanded="false" />
-                <element signature="e#804#875#0#HTML" expanded="false" />
-                <element signature="e#934#1009#0#HTML" expanded="false" />
-                <element signature="e#1104#1232#0#HTML" expanded="false" />
-                <element signature="e#1120#1170#0#DjangoTemplate" expanded="false" />
-                <element signature="e#1285#1357#0#HTML" expanded="false" />
-                <element signature="n#block#2;n#!!top" expanded="false" />
-                <element signature="n#section#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#section#0;n#!!top" expanded="false" />
-                <element signature="n#ul#0;n#div#0;n#section#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-                <element signature="n#span#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-                <element signature="n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-                <element signature="n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-                <element signature="n#span#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-                <element signature="n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-                <element signature="n#span#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-                <element signature="n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-                <element signature="n#li#3;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-                <element signature="n#for#0;n#!!top" expanded="false" />
-                <element signature="n#span#1;n#li#3;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-                <element signature="n#if#1;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-                <element signature="n#ul#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-                <element signature="n#li#0;n#ul#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-                <element signature="n#li#1;n#ul#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-                <element signature="n#li#3;n#ul#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-                <element signature="n#section#2;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#section#2;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-                <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-                <element signature="n#for#1;n#!!top" expanded="false" />
-                <element signature="n#dl#0;n#div#1;n#div#1;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-                <element signature="n#dt#0;n#dl#0;n#div#1;n#div#1;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#dt#0;n#dl#0;n#div#1;n#div#1;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-                <element signature="n#img#0;n#a#0;n#dt#0;n#dl#0;n#div#1;n#div#1;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-                <element signature="n#dd#0;n#dl#0;n#div#1;n#div#1;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="course-video.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/course-video.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="52" lean-forward="false" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#h3#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#li#0;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#li#0;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#li#1;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#li#1;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#li#2;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#li#2;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#h3#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#ul#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#li#0;n#ul#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#li#0;n#ul#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#li#1;n#ul#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#li#1;n#ul#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#h3#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#ul#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#li#0;n#ul#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#li#0;n#ul#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#li#1;n#ul#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#li#1;n#ul#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#li#2;n#ul#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#li#2;n#ul#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#li#3;n#ul#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#li#3;n#ul#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#li#4;n#ul#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#li#4;n#ul#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#h3#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#ul#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#li#0;n#ul#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#li#0;n#ul#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#li#1;n#ul#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#li#1;n#ul#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#4;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#h3#0;n#div#4;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#ul#0;n#div#4;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#li#0;n#ul#0;n#div#4;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#li#0;n#ul#0;n#div#4;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#li#1;n#ul#0;n#div#4;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#li#1;n#ul#0;n#div#4;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#span#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#dl#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#dl#1;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#ul#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#li#0;n#ul#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#li#1;n#ul#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#li#1;n#ul#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#li#2;n#ul#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#li#2;n#ul#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#li#3;n#ul#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#li#3;n#ul#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#li#4;n#ul#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#li#4;n#ul#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#ul#0;n#div#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#li#0;n#ul#0;n#div#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#a#0;n#li#0;n#ul#0;n#div#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="e#25#64#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -263,145 +128,9 @@
         <entry file="file://$PROJECT_DIR$/apps/courses/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+              <caret line="17" column="37" lean-forward="false" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
               <folding>
                 <element signature="e#75#116#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="course-comment.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/course-comment.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="4" column="88" lean-forward="false" selection-start-line="4" selection-start-column="88" selection-end-line="4" selection-end-column="88" />
-              <caret line="5" column="94" lean-forward="false" selection-start-line="5" selection-start-column="94" selection-end-line="5" selection-end-column="94" />
-              <caret line="6" column="81" lean-forward="false" selection-start-line="6" selection-start-column="81" selection-end-line="6" selection-end-column="81" />
-              <caret line="7" column="95" lean-forward="false" selection-start-line="7" selection-start-column="95" selection-end-line="7" selection-end-column="95" />
-              <folding>
-                <element signature="e#950#22366#0#HTML" expanded="false" />
-                <element signature="e#974#2034#0#HTML" expanded="false" />
-                <element signature="e#1013#2019#0#HTML" expanded="false" />
-                <element signature="e#1048#1110#0#HTML" expanded="false" />
-                <element signature="e#1127#1223#0#HTML" expanded="false" />
-                <element signature="e#1240#2000#0#HTML" expanded="false" />
-                <element signature="e#1291#1507#0#HTML" expanded="false" />
-                <element signature="e#1528#1739#0#HTML" expanded="false" />
-                <element signature="e#1760#1977#0#HTML" expanded="false" />
-                <element signature="e#2043#22355#0#HTML" expanded="false" />
-                <element signature="e#2111#22339#0#HTML" expanded="false" />
-                <element signature="e#2159#22277#0#HTML" expanded="false" />
-                <element signature="e#2215#15919#0#HTML" expanded="false" />
-                <element signature="e#2261#2694#0#HTML" expanded="false" />
-                <element signature="e#2316#2663#0#HTML" expanded="false" />
-                <element signature="e#2756#3282#0#HTML" expanded="false" />
-                <element signature="e#2845#3063#0#HTML" expanded="false" />
-                <element signature="e#3307#15891#0#HTML" expanded="false" />
-                <element signature="e#3358#15860#0#HTML" expanded="false" />
-                <element signature="e#3431#4478#0#HTML" expanded="false" />
-                <element signature="e#3489#3765#0#HTML" expanded="false" />
-                <element signature="e#3802#4440#0#HTML" expanded="false" />
-                <element signature="e#3859#4002#0#HTML" expanded="false" />
-                <element signature="e#4212#4397#0#HTML" expanded="false" />
-                <element signature="e#4512#5678#0#HTML" expanded="false" />
-                <element signature="e#4570#4846#0#HTML" expanded="false" />
-                <element signature="e#4883#5640#0#HTML" expanded="false" />
-                <element signature="e#4940#5083#0#HTML" expanded="false" />
-                <element signature="e#5412#5597#0#HTML" expanded="false" />
-                <element signature="e#5712#6889#0#HTML" expanded="false" />
-                <element signature="e#5770#6046#0#HTML" expanded="false" />
-                <element signature="e#6083#6851#0#HTML" expanded="false" />
-                <element signature="e#6140#6283#0#HTML" expanded="false" />
-                <element signature="e#6623#6808#0#HTML" expanded="false" />
-                <element signature="e#6923#8032#0#HTML" expanded="false" />
-                <element signature="e#6981#7257#0#HTML" expanded="false" />
-                <element signature="e#7294#7994#0#HTML" expanded="false" />
-                <element signature="e#7351#7494#0#HTML" expanded="false" />
-                <element signature="e#7766#7951#0#HTML" expanded="false" />
-                <element signature="e#8066#9008#0#HTML" expanded="false" />
-                <element signature="e#8124#8400#0#HTML" expanded="false" />
-                <element signature="e#8437#8970#0#HTML" expanded="false" />
-                <element signature="e#8494#8637#0#HTML" expanded="false" />
-                <element signature="e#8742#8927#0#HTML" expanded="false" />
-                <element signature="e#9042#9980#0#HTML" expanded="false" />
-                <element signature="e#9100#9376#0#HTML" expanded="false" />
-                <element signature="e#9413#9942#0#HTML" expanded="false" />
-                <element signature="e#9470#9613#0#HTML" expanded="false" />
-                <element signature="e#9715#9899#0#HTML" expanded="false" />
-                <element signature="e#10014#10952#0#HTML" expanded="false" />
-                <element signature="e#10072#10348#0#HTML" expanded="false" />
-                <element signature="e#10385#10914#0#HTML" expanded="false" />
-                <element signature="e#10442#10585#0#HTML" expanded="false" />
-                <element signature="e#10687#10871#0#HTML" expanded="false" />
-                <element signature="e#10986#11924#0#HTML" expanded="false" />
-                <element signature="e#11044#11320#0#HTML" expanded="false" />
-                <element signature="e#11357#11886#0#HTML" expanded="false" />
-                <element signature="e#11414#11557#0#HTML" expanded="false" />
-                <element signature="e#11659#11843#0#HTML" expanded="false" />
-                <element signature="e#11958#12899#0#HTML" expanded="false" />
-                <element signature="e#12016#12292#0#HTML" expanded="false" />
-                <element signature="e#12329#12861#0#HTML" expanded="false" />
-                <element signature="e#12386#12529#0#HTML" expanded="false" />
-                <element signature="e#12634#12818#0#HTML" expanded="false" />
-                <element signature="e#12933#13875#0#HTML" expanded="false" />
-                <element signature="e#12991#13267#0#HTML" expanded="false" />
-                <element signature="e#13304#13837#0#HTML" expanded="false" />
-                <element signature="e#13361#13504#0#HTML" expanded="false" />
-                <element signature="e#13610#13794#0#HTML" expanded="false" />
-                <element signature="e#13909#14851#0#HTML" expanded="false" />
-                <element signature="e#13967#14243#0#HTML" expanded="false" />
-                <element signature="e#14280#14813#0#HTML" expanded="false" />
-                <element signature="e#14337#14480#0#HTML" expanded="false" />
-                <element signature="e#14586#14770#0#HTML" expanded="false" />
-                <element signature="e#14885#15825#0#HTML" expanded="false" />
-                <element signature="e#14943#15219#0#HTML" expanded="false" />
-                <element signature="e#15256#15787#0#HTML" expanded="false" />
-                <element signature="e#15313#15456#0#HTML" expanded="false" />
-                <element signature="e#15560#15744#0#HTML" expanded="false" />
-                <element signature="e#15940#22254#0#HTML" expanded="false" />
-                <element signature="e#15986#22227#0#HTML" expanded="false" />
-                <element signature="e#16032#16635#0#HTML" expanded="false" />
-                <element signature="e#16133#16600#0#HTML" expanded="false" />
-                <element signature="e#16192#16561#0#HTML" expanded="false" />
-                <element signature="e#16664#17886#0#HTML" expanded="false" />
-                <element signature="e#16765#17298#0#HTML" expanded="false" />
-                <element signature="e#16828#17046#0#HTML" expanded="false" />
-                <element signature="e#17083#17194#0#HTML" expanded="false" />
-                <element signature="e#17331#17851#0#HTML" expanded="false" />
-                <element signature="e#17397#17590#0#HTML" expanded="false" />
-                <element signature="e#17627#17812#0#HTML" expanded="false" />
-                <element signature="e#17917#22195#0#HTML" expanded="false" />
-                <element signature="e#17994#18136#0#HTML" expanded="false" />
-                <element signature="e#18169#22160#0#HTML" expanded="false" />
-                <element signature="e#18227#21298#0#HTML" expanded="false" />
-                <element signature="e#18462#21255#0#HTML" expanded="false" />
-                <element signature="e#18530#19037#0#HTML" expanded="false" />
-                <element signature="e#18596#18987#0#HTML" expanded="false" />
-                <element signature="e#19082#19577#0#HTML" expanded="false" />
-                <element signature="e#19135#19527#0#HTML" expanded="false" />
-                <element signature="e#19622#20117#0#HTML" expanded="false" />
-                <element signature="e#19675#20067#0#HTML" expanded="false" />
-                <element signature="e#20162#20662#0#HTML" expanded="false" />
-                <element signature="e#20215#20612#0#HTML" expanded="false" />
-                <element signature="e#20707#21209#0#HTML" expanded="false" />
-                <element signature="e#20760#21159#0#HTML" expanded="false" />
-                <element signature="e#21335#22121#0#HTML" expanded="false" />
-                <element signature="e#21441#22078#0#HTML" expanded="false" />
-                <element signature="e#21509#22032#0#HTML" expanded="false" />
-                <element signature="e#21575#21982#0#HTML" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/apps/courses/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="61" column="23" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-              <folding>
-                <element signature="e#25#64#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -420,36 +149,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>难度</find>
-      <find>detail</find>
-      <find>grade</find>
-      <find>from __future__ imports</find>
-      <find>from __future__ import unicode_literals\n</find>
-      <find>type</find>
-      <find>`</find>
-      <find>session</find>
-      <find>category</find>
-      <find>学习用户</find>
-      <find>lesson</find>
-      <find>tag</find>
-      <find>userfav</find>
-      <find>addfav</find>
-      <find>相关课程推荐</find>
-      <find>收藏</find>
-      <find>has</find>
-      <find>TEMPLATE_CONTEXT_PROCESSORS</find>
-      <find>template</find>
-      <find>installed</find>
-      <find>context</find>
-      <find>==</find>
-      <find>function add_fa</find>
-      <find>email\wsend</find>
-      <find>href</find>
-      <find>&lt;a.*href=</find>
-      <find>data</find>
-      <find>custom</find>
+      <find>django</find>
+      <find>class.*Course</find>
+      <find>course_comment</find>
+      <find>资料</find>
+      <find>_set</find>
+      <find>\w+_set</find>
+      <find>resour</find>
+      <find>set</find>
+      <find>c</find>
+      <find>讲师提示</find>
       <find>course</find>
-      <find>static</find>
+      <find>评论</find>
+      <find>if</find>
+      <find>user</find>
+      <find>course.note</find>
+      <find>comme</find>
+      <find>addfav</find>
+      <find>js-pl-submit</find>
+      <find>infos</find>
+      <find>post-row</find>
+      <find>Course</find>
+      <find>相关课程</find>
+      <find>courseIn</find>
+      <find>course.+co</find>
+      <find>该课</find>
+      <find>g</find>
+      <find>aside</find>
+      <find>course_id</find>
+      <find>cp-body</find>
+      <find>related</find>
     </findStrings>
     <replaceStrings>
       <replace>/static/js</replace>
@@ -479,14 +208,12 @@
         <option value="$PROJECT_DIR$/apps/operation/url.py" />
         <option value="$PROJECT_DIR$/apps/operation/forms.py" />
         <option value="$PROJECT_DIR$/apps/organization/adminx.py" />
-        <option value="$PROJECT_DIR$/apps/courses/adminx.py" />
         <option value="$PROJECT_DIR$/templates/org-detail-homepage.html" />
         <option value="$PROJECT_DIR$/templates/org-detail-desc.html" />
         <option value="$PROJECT_DIR$/templates/course-list.html" />
         <option value="$PROJECT_DIR$/templates/org-detail-teachers.html" />
         <option value="$PROJECT_DIR$/apps/courses/migrations/0005_auto_20180118_0428.py" />
         <option value="$PROJECT_DIR$/apps/courses/migrations/0002_auto_20180118_1042.py" />
-        <option value="$PROJECT_DIR$/apps/operation/models.py" />
         <option value="$PROJECT_DIR$/apps/operation/migrations/0002_auto_20180118_1448.py" />
         <option value="$PROJECT_DIR$/templates/org-list.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
@@ -508,12 +235,14 @@
         <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/templates/org_base.html" />
         <option value="$PROJECT_DIR$/templates/org-detail-course.html" />
-        <option value="$PROJECT_DIR$/apps/courses/views.py" />
-        <option value="$PROJECT_DIR$/apps/courses/urls.py" />
         <option value="$PROJECT_DIR$/templates/course-detail.html" />
-        <option value="$PROJECT_DIR$/templates/course-video.html" />
-        <option value="$PROJECT_DIR$/templates/course-comment.html" />
+        <option value="$PROJECT_DIR$/apps/courses/adminx.py" />
         <option value="$PROJECT_DIR$/apps/courses/models.py" />
+        <option value="$PROJECT_DIR$/apps/courses/urls.py" />
+        <option value="$PROJECT_DIR$/apps/operation/models.py" />
+        <option value="$PROJECT_DIR$/templates/course-comment.html" />
+        <option value="$PROJECT_DIR$/apps/courses/views.py" />
+        <option value="$PROJECT_DIR$/templates/course-video.html" />
       </list>
     </option>
   </component>
@@ -525,7 +254,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="881" />
+    <option name="width" value="1196" />
     <option name="height" value="778" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -588,6 +317,36 @@
             <path>
               <item name="OlineEdu的副本" type="b2602c69:ProjectViewProjectNode" />
               <item name="OlineEdu的副本" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="operation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OlineEdu的副本" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OlineEdu的副本" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="organization" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OlineEdu的副本" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OlineEdu的副本" type="462c0819:PsiDirectoryNode" />
+              <item name="courses" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OlineEdu的副本" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OlineEdu的副本" type="462c0819:PsiDirectoryNode" />
+              <item name="courses" type="462c0819:PsiDirectoryNode" />
+              <item name="2017" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OlineEdu的副本" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OlineEdu的副本" type="462c0819:PsiDirectoryNode" />
+              <item name="courses" type="462c0819:PsiDirectoryNode" />
+              <item name="2017" type="462c0819:PsiDirectoryNode" />
+              <item name="11" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OlineEdu的副本" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OlineEdu的副本" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -601,7 +360,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/apolodu/PycharmProjects/OlineEdu/apps/courses/migrations/0002_auto_20180118_1042.py" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/apolodu/PycharmProjects/OlineEdu的副本/apps/operation/models.py" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -753,16 +512,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="881" height="778" extended-state="0" />
+    <frame x="0" y="22" width="1196" height="778" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2560606" sideWeight="0.50403225" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22727273" sideWeight="0.49596775" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3439394" sideWeight="0.49596775" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50757575" sideWeight="0.4858871" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3242424" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36060607" sideWeight="0.48791406" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36060607" sideWeight="0.48791406" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="manage.py@OlineEdu" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35454544" sideWeight="0.49445325" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25148988" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1967071" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32821077" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287879" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26153848" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -875,19 +635,11 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="171" />
+      <option name="time" value="191" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/adminx.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-208">
@@ -916,6 +668,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1007,9 +760,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1156">
           <caret line="173" column="35" lean-forward="false" selection-start-line="173" selection-start-column="32" selection-end-line="173" selection-end-column="35" />
-          <folding>
-            <element signature="e#25#64#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1136,52 +887,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/online_edu/lib/python2.7/site-packages/django/core/management/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4695">
-          <caret line="313" column="0" lean-forward="false" selection-start-line="313" selection-start-column="0" selection-end-line="313" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/operation/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/users/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/organization/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-365">
           <caret line="29" column="29" lean-forward="false" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1175">
-          <caret line="96" column="55" lean-forward="false" selection-start-line="96" selection-start-column="55" selection-end-line="96" selection-end-column="55" />
           <folding />
         </state>
       </provider>
@@ -1220,14 +929,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/utils/email_send.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="43" column="66" lean-forward="false" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/org-detail-course.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
@@ -1236,322 +937,134 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/courses/views.py">
+    <entry file="file://$PROJECT_DIR$/apps/utils/email_send.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-          <folding>
-            <element signature="e#445#1186#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="-3">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/courses/adminx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="55" lean-forward="false" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/organization/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="52" column="42" lean-forward="false" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/online_edu/lib/python2.7/site-packages/django/core/management/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="313" column="0" lean-forward="false" selection-start-line="313" selection-start-column="0" selection-end-line="313" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1890">
+          <caret line="126" column="48" lean-forward="false" selection-start-line="126" selection-start-column="44" selection-end-line="126" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/courses/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <caret line="17" column="37" lean-forward="false" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
           <folding>
             <element signature="e#75#116#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/apps/users/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/operation/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="59" column="6" lean-forward="false" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/courses/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="9" />
+          <folding>
+            <element signature="e#25#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/course-detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="101" column="30" lean-forward="true" selection-start-line="101" selection-start-column="30" selection-end-line="101" selection-end-column="30" />
+        <state relative-caret-position="149">
+          <caret line="181" column="46" lean-forward="true" selection-start-line="181" selection-start-column="46" selection-end-line="181" selection-end-column="46" />
           <folding>
             <element signature="n#block#0;n#!!top" expanded="false" />
-            <element signature="n#block#1;n#!!top" expanded="false" />
-            <element signature="n#script#0;n#!!top" expanded="false" />
-            <element signature="e#189#1054#0#HTML" expanded="false" />
-            <element signature="e#210#1042#0#HTML" expanded="false" />
-            <element signature="e#467#563#0#HTML" expanded="false" />
-            <element signature="e#606#1027#0#HTML" expanded="false" />
-            <element signature="e#655#898#0#HTML" expanded="false" />
-            <element signature="e#706#798#0#HTML" expanded="false" />
-            <element signature="e#804#875#0#HTML" expanded="false" />
-            <element signature="e#934#1009#0#HTML" expanded="false" />
-            <element signature="e#1104#1232#0#HTML" expanded="false" />
             <element signature="e#1120#1170#0#DjangoTemplate" expanded="false" />
-            <element signature="e#1285#1357#0#HTML" expanded="false" />
             <element signature="n#block#2;n#!!top" expanded="false" />
-            <element signature="n#section#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#section#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#div#0;n#section#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#span#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#span#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#span#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#li#3;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
             <element signature="n#for#0;n#!!top" expanded="false" />
-            <element signature="n#span#1;n#li#3;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#a#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#a#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
+            <element signature="n#if#0;n#!!top" expanded="false" />
             <element signature="n#if#1;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#li#0;n#ul#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#li#1;n#ul#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#li#3;n#ul#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#section#2;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#for#1;n#!!top" expanded="false" />
-            <element signature="n#dl#0;n#div#1;n#div#1;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#dt#0;n#dl#0;n#div#1;n#div#1;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#a#0;n#dt#0;n#dl#0;n#div#1;n#div#1;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#img#0;n#a#0;n#dt#0;n#dl#0;n#div#1;n#div#1;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
-            <element signature="n#dd#0;n#dl#0;n#div#1;n#div#1;n#div#0;n#div#0;n#section#2;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/courses/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-262">
+          <caret line="79" column="12" lean-forward="false" selection-start-line="79" selection-start-column="12" selection-end-line="79" selection-end-column="12" />
+          <folding>
+            <element signature="e#486#1227#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/course-comment.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="4" column="88" lean-forward="false" selection-start-line="4" selection-start-column="88" selection-end-line="4" selection-end-column="88" />
-          <caret line="5" column="94" lean-forward="false" selection-start-line="5" selection-start-column="94" selection-end-line="5" selection-end-column="94" />
-          <caret line="6" column="81" lean-forward="false" selection-start-line="6" selection-start-column="81" selection-end-line="6" selection-end-column="81" />
-          <caret line="7" column="95" lean-forward="false" selection-start-line="7" selection-start-column="95" selection-end-line="7" selection-end-column="95" />
+        <state relative-caret-position="148">
+          <caret line="157" column="0" lean-forward="false" selection-start-line="157" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
           <folding>
-            <element signature="e#950#22366#0#HTML" expanded="false" />
-            <element signature="e#974#2034#0#HTML" expanded="false" />
-            <element signature="e#1013#2019#0#HTML" expanded="false" />
-            <element signature="e#1048#1110#0#HTML" expanded="false" />
-            <element signature="e#1127#1223#0#HTML" expanded="false" />
-            <element signature="e#1240#2000#0#HTML" expanded="false" />
-            <element signature="e#1291#1507#0#HTML" expanded="false" />
-            <element signature="e#1528#1739#0#HTML" expanded="false" />
-            <element signature="e#1760#1977#0#HTML" expanded="false" />
-            <element signature="e#2043#22355#0#HTML" expanded="false" />
-            <element signature="e#2111#22339#0#HTML" expanded="false" />
-            <element signature="e#2159#22277#0#HTML" expanded="false" />
-            <element signature="e#2215#15919#0#HTML" expanded="false" />
-            <element signature="e#2261#2694#0#HTML" expanded="false" />
-            <element signature="e#2316#2663#0#HTML" expanded="false" />
-            <element signature="e#2756#3282#0#HTML" expanded="false" />
-            <element signature="e#2845#3063#0#HTML" expanded="false" />
-            <element signature="e#3307#15891#0#HTML" expanded="false" />
-            <element signature="e#3358#15860#0#HTML" expanded="false" />
-            <element signature="e#3431#4478#0#HTML" expanded="false" />
-            <element signature="e#3489#3765#0#HTML" expanded="false" />
-            <element signature="e#3802#4440#0#HTML" expanded="false" />
-            <element signature="e#3859#4002#0#HTML" expanded="false" />
-            <element signature="e#4212#4397#0#HTML" expanded="false" />
-            <element signature="e#4512#5678#0#HTML" expanded="false" />
-            <element signature="e#4570#4846#0#HTML" expanded="false" />
-            <element signature="e#4883#5640#0#HTML" expanded="false" />
-            <element signature="e#4940#5083#0#HTML" expanded="false" />
-            <element signature="e#5412#5597#0#HTML" expanded="false" />
-            <element signature="e#5712#6889#0#HTML" expanded="false" />
-            <element signature="e#5770#6046#0#HTML" expanded="false" />
-            <element signature="e#6083#6851#0#HTML" expanded="false" />
-            <element signature="e#6140#6283#0#HTML" expanded="false" />
-            <element signature="e#6623#6808#0#HTML" expanded="false" />
-            <element signature="e#6923#8032#0#HTML" expanded="false" />
-            <element signature="e#6981#7257#0#HTML" expanded="false" />
-            <element signature="e#7294#7994#0#HTML" expanded="false" />
-            <element signature="e#7351#7494#0#HTML" expanded="false" />
-            <element signature="e#7766#7951#0#HTML" expanded="false" />
-            <element signature="e#8066#9008#0#HTML" expanded="false" />
-            <element signature="e#8124#8400#0#HTML" expanded="false" />
-            <element signature="e#8437#8970#0#HTML" expanded="false" />
-            <element signature="e#8494#8637#0#HTML" expanded="false" />
-            <element signature="e#8742#8927#0#HTML" expanded="false" />
-            <element signature="e#9042#9980#0#HTML" expanded="false" />
-            <element signature="e#9100#9376#0#HTML" expanded="false" />
-            <element signature="e#9413#9942#0#HTML" expanded="false" />
-            <element signature="e#9470#9613#0#HTML" expanded="false" />
-            <element signature="e#9715#9899#0#HTML" expanded="false" />
-            <element signature="e#10014#10952#0#HTML" expanded="false" />
-            <element signature="e#10072#10348#0#HTML" expanded="false" />
-            <element signature="e#10385#10914#0#HTML" expanded="false" />
-            <element signature="e#10442#10585#0#HTML" expanded="false" />
-            <element signature="e#10687#10871#0#HTML" expanded="false" />
-            <element signature="e#10986#11924#0#HTML" expanded="false" />
-            <element signature="e#11044#11320#0#HTML" expanded="false" />
-            <element signature="e#11357#11886#0#HTML" expanded="false" />
-            <element signature="e#11414#11557#0#HTML" expanded="false" />
-            <element signature="e#11659#11843#0#HTML" expanded="false" />
-            <element signature="e#11958#12899#0#HTML" expanded="false" />
-            <element signature="e#12016#12292#0#HTML" expanded="false" />
-            <element signature="e#12329#12861#0#HTML" expanded="false" />
-            <element signature="e#12386#12529#0#HTML" expanded="false" />
-            <element signature="e#12634#12818#0#HTML" expanded="false" />
-            <element signature="e#12933#13875#0#HTML" expanded="false" />
-            <element signature="e#12991#13267#0#HTML" expanded="false" />
-            <element signature="e#13304#13837#0#HTML" expanded="false" />
-            <element signature="e#13361#13504#0#HTML" expanded="false" />
-            <element signature="e#13610#13794#0#HTML" expanded="false" />
-            <element signature="e#13909#14851#0#HTML" expanded="false" />
-            <element signature="e#13967#14243#0#HTML" expanded="false" />
-            <element signature="e#14280#14813#0#HTML" expanded="false" />
-            <element signature="e#14337#14480#0#HTML" expanded="false" />
-            <element signature="e#14586#14770#0#HTML" expanded="false" />
-            <element signature="e#14885#15825#0#HTML" expanded="false" />
-            <element signature="e#14943#15219#0#HTML" expanded="false" />
-            <element signature="e#15256#15787#0#HTML" expanded="false" />
-            <element signature="e#15313#15456#0#HTML" expanded="false" />
-            <element signature="e#15560#15744#0#HTML" expanded="false" />
-            <element signature="e#15940#22254#0#HTML" expanded="false" />
-            <element signature="e#15986#22227#0#HTML" expanded="false" />
-            <element signature="e#16032#16635#0#HTML" expanded="false" />
-            <element signature="e#16133#16600#0#HTML" expanded="false" />
-            <element signature="e#16192#16561#0#HTML" expanded="false" />
-            <element signature="e#16664#17886#0#HTML" expanded="false" />
-            <element signature="e#16765#17298#0#HTML" expanded="false" />
-            <element signature="e#16828#17046#0#HTML" expanded="false" />
-            <element signature="e#17083#17194#0#HTML" expanded="false" />
-            <element signature="e#17331#17851#0#HTML" expanded="false" />
-            <element signature="e#17397#17590#0#HTML" expanded="false" />
-            <element signature="e#17627#17812#0#HTML" expanded="false" />
-            <element signature="e#17917#22195#0#HTML" expanded="false" />
-            <element signature="e#17994#18136#0#HTML" expanded="false" />
-            <element signature="e#18169#22160#0#HTML" expanded="false" />
-            <element signature="e#18227#21298#0#HTML" expanded="false" />
-            <element signature="e#18462#21255#0#HTML" expanded="false" />
-            <element signature="e#18530#19037#0#HTML" expanded="false" />
-            <element signature="e#18596#18987#0#HTML" expanded="false" />
-            <element signature="e#19082#19577#0#HTML" expanded="false" />
-            <element signature="e#19135#19527#0#HTML" expanded="false" />
-            <element signature="e#19622#20117#0#HTML" expanded="false" />
-            <element signature="e#19675#20067#0#HTML" expanded="false" />
-            <element signature="e#20162#20662#0#HTML" expanded="false" />
-            <element signature="e#20215#20612#0#HTML" expanded="false" />
-            <element signature="e#20707#21209#0#HTML" expanded="false" />
-            <element signature="e#20760#21159#0#HTML" expanded="false" />
-            <element signature="e#21335#22121#0#HTML" expanded="false" />
-            <element signature="e#21441#22078#0#HTML" expanded="false" />
-            <element signature="e#21509#22032#0#HTML" expanded="false" />
-            <element signature="e#21575#21982#0#HTML" expanded="false" />
+            <element signature="n#block#1;n#!!top" expanded="false" />
+            <element signature="n#block#2;n#!!top" expanded="false" />
+            <element signature="e#1243#2371#0#HTML" expanded="false" />
+            <element signature="e#1282#2356#0#HTML" expanded="false" />
+            <element signature="e#1396#1492#0#HTML" expanded="false" />
+            <element signature="e#7721#7863#0#HTML" expanded="false" />
+            <element signature="e#8189#9033#0#HTML" expanded="false" />
+            <element signature="n#for#2;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/course-video.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="52" lean-forward="false" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
+        <state relative-caret-position="140">
+          <caret line="165" column="0" lean-forward="false" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#h3#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#li#0;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#a#0;n#li#0;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#li#1;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#a#0;n#li#1;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#li#2;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#a#0;n#li#2;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#h3#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#li#0;n#ul#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#a#0;n#li#0;n#ul#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#li#1;n#ul#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#a#0;n#li#1;n#ul#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#h3#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#li#0;n#ul#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#a#0;n#li#0;n#ul#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#li#1;n#ul#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#a#0;n#li#1;n#ul#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#li#2;n#ul#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#a#0;n#li#2;n#ul#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#li#3;n#ul#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#a#0;n#li#3;n#ul#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#li#4;n#ul#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#a#0;n#li#4;n#ul#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#h3#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#li#0;n#ul#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#a#0;n#li#0;n#ul#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#li#1;n#ul#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#a#0;n#li#1;n#ul#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#h3#0;n#div#4;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#div#4;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#li#0;n#ul#0;n#div#4;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#a#0;n#li#0;n#ul#0;n#div#4;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#li#1;n#ul#0;n#div#4;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#a#0;n#li#1;n#ul#0;n#div#4;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#a#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#span#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#dl#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#dl#1;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
             <element signature="n#ul#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#li#0;n#ul#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#a#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#li#1;n#ul#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#a#0;n#li#1;n#ul#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#li#2;n#ul#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#a#0;n#li#2;n#ul#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#li#3;n#ul#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#a#0;n#li#3;n#ul#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#li#4;n#ul#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#a#0;n#li#4;n#ul#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#div#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#li#0;n#ul#0;n#div#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#a#0;n#li#0;n#ul#0;n#div#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/courses/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="61" column="23" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding>
-            <element signature="e#25#64#0" expanded="true" />
+            <element signature="n#for#3;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
