@@ -80,3 +80,22 @@ class CourseDetailView(View):
             'courseorg_has_fav': courseorg_has_fav,
             'course_has_fav': course_has_fav,
         })
+
+
+class CourseInfoView(View):
+    def get(self, request, course_id):
+
+        current_course = Course.objects.get(id=int(course_id))
+
+        return render(request, 'course-video.html', {
+            'course': current_course,
+        })
+
+
+class CourseCommentView(View):
+    def get(self, request, course_id):
+        current_course = Course.objects.get(id=int(course_id))
+
+        return render(request, 'course-video.html', {
+            'course': current_course,
+        })

@@ -11,10 +11,11 @@
             {% for course in all_courses %}
                 <div class="module1_5 box">
                     {# 课程的图片 #}
-                    <a href="course-detail.html"><img width="214" src="{{ MEDIA_URL }}{{ course.image  }}"/></a>
+                    <a href="{% url 'course:course_detail' course.id %}"><img width="214"
+                                                                              src="{{ MEDIA_URL }}{{ course.image }}"/></a>
                     <div class="des">
                         {# 课程名#}
-                        <a href="course-detail.html"><h2>{{ course.name }}</h2></a>
+                        <a href="{% url 'course:course_detail' course.id %}"><h2>{{ course.name }}</h2></a>
                         {# 课程时间 #}
                         <span class="fl">课时: <i class="key"> {{ course.learn_times }}分钟</i></span>
                         {# 课程人数 #}
@@ -24,10 +25,7 @@
                         {# 课程机构名, 直接访问外键数据对象的name字段 #}
                         <span class="fl">{{ course_org.name }}</span>
                         <span class="star fr  notlogin
-                            " data-favid="13" data-fav-type="4">
-                             {# 课程收藏数 #}
-                            {{ course.fav_nums }}
-                        </span>
+                            " data-favid="13" data-fav-type="4">{{ course.fav_nums }}</span>
                     </div>
                 </div>
             {% endfor %}

@@ -33,6 +33,8 @@ urlpatterns = [
     url('^login/$',LoginView.as_view(), name='login'),
     url('^register/$', RegisterView.as_view(), name='register'),
     url(r'^captcha/', include('captcha.urls')),
+
+    # 邮件激活
     url(r'^active/(?P<active_code>\w+)/$', ActiveUserView.as_view(), name='user_active'),
     url(r'^forget/$', ForgetPwdView.as_view(), name='forget_pwd'),
     url(r'^reset/(?P<active_code>\w+)/$', ResetView.as_view(), name='reset_pwd'),
