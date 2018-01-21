@@ -9,9 +9,10 @@ import json
 from django.shortcuts import render, render_to_response
 from django.views.generic import View
 from django.http import HttpResponse
-from .models import Course
 from operation.models import UserFavorite, CourseComments, UserCourse
+from utils.mixin_utils import LoginRequiredMixin
 
+from .models import Course, Video
 from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
 
 
@@ -102,13 +103,25 @@ def get_related_courses(course_id):
     return related_courses
 
 
-class CourseInfoView(View):
+class CourseInfoView(LoginRequiredMixin, View):
     def get(self, request, course_id):
+        # 获得当前页面类型, 用于判断标签的active类
         current_page = 'info'
 
         related_courses = get_related_courses(course_id)
-
         current_course = Course.objects.get(id=int(course_id))
+
+        user_course = UserCourse()
+        user_course.course_id = course_id
+        user_course.user_id = request.user.id
+        user_course.save()
+
+        # 关联用户和课程
+        user_course = UserCourse.objects.filter(user=request.user, course=current_course)
+        if not user_course:
+            user_course = UserCourse(user=request.user, course=current_course)
+            user_course.save()
+
         return render(request, 'course-video.html', {
             'course': current_course,
             'current_page': current_page,
@@ -116,19 +129,31 @@ class CourseInfoView(View):
         })
 
 
-class CourseCommentView(View):
+class CourseCommentView(LoginRequiredMixin, View):
     def get(self, request, course_id):
+        # 获得当前页面类型, 用于判断顶部标签的active类
         current_page = 'comment'
+
+        # 获得当前的课程
         current_course = Course.objects.get(id=int(course_id))
+
+        # 获得当前课程下的所有评论
         all_comment = current_course.coursecomments_set.all()
 
+        # 获得参加了该课程的用户所参加的其他课程 (相关课程)
         related_courses = get_related_courses(course_id)
+
+        # 关联用户和课程
+        user_course = UserCourse.objects.filter(user=request.user, course=current_course)
+        if not user_course:
+            user_course = UserCourse(user=request.user, course=current_course)
+            user_course.save()
 
         return render(request, 'course-comment.html', {
             'course': current_course,
             'current_page': current_page,
             'comments': all_comment,
-            'related_courses':related_courses,
+            'related_courses': related_courses,
 
         })
 
@@ -156,3 +181,33 @@ class AddCommentsView(View):
 
             else:
                 return HttpResponse(json.dumps({"status": "fail", "msg": "添加失败"}), content_type='application/json')
+
+
+class VideoPlayView(View):
+    # 视频播放页面
+    def get(self, request, video_id):
+        # 获得当前页面类型, 用于判断标签的active类
+        video = Video.objects.get(id=int(video_id))
+        current_course = video.lesson.course
+        course_id = current_course.id
+        current_page = 'video'
+
+        related_courses = get_related_courses(course_id)
+
+        user_course = UserCourse()
+        user_course.course_id = course_id
+        user_course.user_id = request.user.id
+        user_course.save()
+
+        # 关联用户和课程
+        user_course = UserCourse.objects.filter(user=request.user, course=current_course)
+        if not user_course:
+            user_course = UserCourse(user=request.user, course=current_course)
+            user_course.save()
+
+        return render(request, 'course-play.html', {
+            'course':current_course ,
+            'current_page': current_page,
+            'related_courses': related_courses,
+            'video':video,
+        })

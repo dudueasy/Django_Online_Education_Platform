@@ -27,7 +27,7 @@ SECRET_KEY = '2z=#g^!z&)$74r_q-)24vep^e8azng027a$y=&ap^&@r6_irn8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.0.112']
 
 
 # Application definition
@@ -168,3 +168,5 @@ PAGINATION_SETTINGS = {
     'MARGIN_PAGES_DISPLAYED': 2,
     'SHOW_FIRST_PAGE_WHEN_INVALID': True,
 }
+
+SITE_ID = 1
