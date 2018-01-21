@@ -62,11 +62,11 @@ class CourseDetailView(View):
 
         # 展示机构收藏按钮状态
         if request.user.is_authenticated():
-            if UserFavorite.objects.filter(fav_id=current_course.course_org.id, fav_type=1):
+            if UserFavorite.objects.filter(fav_id=current_course.course_org.id, fav_type=2):
                 courseorg_has_fav = True
 
                 # 展示课程收藏按钮状态
-            if UserFavorite.objects.filter(fav_id=current_course.id, fav_type=2):
+            if UserFavorite.objects.filter(fav_id=current_course.id, fav_type=1):
                 course_has_fav = True
 
         tag = current_course.tag
