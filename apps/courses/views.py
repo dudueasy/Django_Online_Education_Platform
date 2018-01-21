@@ -111,18 +111,13 @@ class CourseInfoView(LoginRequiredMixin, View):
         related_courses = get_related_courses(course_id)
         current_course = Course.objects.get(id=int(course_id))
 
-        user_course = UserCourse()
-        user_course.course_id = course_id
-        user_course.user_id = request.user.id
-        user_course.save()
-
         # 关联用户和课程
         user_course = UserCourse.objects.filter(user=request.user, course=current_course)
         if not user_course:
             user_course = UserCourse(user=request.user, course=current_course)
             user_course.save()
 
-        return render(request, 'course-video.html', {
+        return render(request, 'course-chapter.html', {
             'course': current_course,
             'current_page': current_page,
             'related_courses': related_courses,
@@ -183,7 +178,7 @@ class AddCommentsView(View):
                 return HttpResponse(json.dumps({"status": "fail", "msg": "添加失败"}), content_type='application/json')
 
 
-class VideoPlayView(View):
+class VideoPlayView(LoginRequiredMixin,View):
     # 视频播放页面
     def get(self, request, video_id):
         # 获得当前页面类型, 用于判断标签的active类
@@ -193,17 +188,6 @@ class VideoPlayView(View):
         current_page = 'video'
 
         related_courses = get_related_courses(course_id)
-
-        user_course = UserCourse()
-        user_course.course_id = course_id
-        user_course.user_id = request.user.id
-        user_course.save()
-
-        # 关联用户和课程
-        user_course = UserCourse.objects.filter(user=request.user, course=current_course)
-        if not user_course:
-            user_course = UserCourse(user=request.user, course=current_course)
-            user_course.save()
 
         return render(request, 'course-play.html', {
             'course':current_course ,

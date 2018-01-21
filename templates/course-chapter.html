@@ -60,7 +60,7 @@
                         <div class="mod-tab-menu">
                             <ul class="course-menu clearfix">
                                 <li><a class="ui-tabs-active active" id="learnOn"
-                                       href="course-video.html"><span>章节</span></a></li>
+                                       href="{% url 'course:course_info' course.id %}"><span>章节</span></a></li>
                                 <li><a id="commentOn" class="" href="{% url 'course:course_comment' course.id %}"><span>评论</span></a>
                                 </li>
                             </ul>
@@ -99,7 +99,7 @@
 
                     </div>
                     <div class="aside r">
-                                                <div class="bd">
+                        <div class="bd">
 
                             <div class="box mb40">
                                 <h4>资料下载</h4>
@@ -153,7 +153,8 @@
                                             {% for related_course in related_courses %}
 
                                                 <li class="curr">
-                                                    <a href="{% url 'course:course_detail' related_course.id %}" target="_blank">
+                                                    <a href="{% url 'course:course_detail' related_course.id %}"
+                                                       target="_blank">
                                                         <img src="{{ MEDIA_URL }}{{ related_course.image }}"
                                                              alt="{{ related_course.name }}">
                                                         <span class="name autowrap">{{ related_course.name }}</span>

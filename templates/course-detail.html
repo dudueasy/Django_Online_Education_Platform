@@ -4,6 +4,9 @@
 {% block custom_js %}
 
     <script>
+        var button = document.querySelector('div.buy')
+        button.onclick = function () { button.children[0].click() }
+
         function add_fav(current_elem, fav_id, fav_type) {
             $.ajax({
                 cache: false,
