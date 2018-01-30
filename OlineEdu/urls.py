@@ -21,7 +21,6 @@ from django.views.generic import TemplateView
 from django.views.static import serve
 from OlineEdu.settings import MEDIA_ROOT
 
-
 from users.views import LoginView, RegisterView, ActiveUserView, ForgetPwdView, ResetView, ModifyPwdView
 from organization.views import OrgView
 
@@ -31,7 +30,7 @@ urlpatterns = [
     url(r'^xadmin/', xadmin.site.urls),
     # url(r'^admin/', admin.site.urls),
     url('^$', TemplateView.as_view(template_name='index.html'), name='index'),
-    url('^login/$',LoginView.as_view(), name='login'),
+    url('^login/$', LoginView.as_view(), name='login'),
     url('^register/$', RegisterView.as_view(), name='register'),
     url(r'^captcha/', include('captcha.urls')),
 
@@ -41,14 +40,13 @@ urlpatterns = [
     url(r'^reset/(?P<active_code>\w+)/$', ResetView.as_view(), name='reset_pwd'),
     url(r'^modify_pwd/$', ModifyPwdView.as_view(), name='modify_pwd'),
 
-    #机构url配置
+    # 机构url配置
     url(r'^org/', include('organization.urls', namespace='org')),
 
     # 课程机构url配置
     url(r'^course/', include('courses.urls', namespace='course')),
 
-    #配置媒体/上传文件的访问处理函数,
-    url(r'^media/(?P<path>.*/$)', serve, {"document_root":MEDIA_ROOT}),
-
+    # 配置媒体/上传文件的访问处理函数,
+    url(r'^media/(?P<path>.*/$)', serve, {"document_root": MEDIA_ROOT}),
 
 ]
