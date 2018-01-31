@@ -9,6 +9,7 @@ import json
 from django.shortcuts import render, render_to_response
 from django.views.generic import View
 from django.http import HttpResponse
+from django.db.models import Q
 from operation.models import UserFavorite, CourseComments, UserCourse
 from utils.mixin_utils import LoginRequiredMixin
 
@@ -17,11 +18,22 @@ from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
 
 
 # Create your views here.
-
+# 课程列表
 class CourseListView(View):
     def get(self, request):
+        search_keyword = request.GET.get('keywords')
+        if search_keyword:
+            all_courses = Course.objects.filter(Q(name__icontains=search_keyword) |
+                                                Q(desc__icontains=search_keyword) |
+                                                Q(detail__icontains=search_keyword) |
+                                                Q(category__icontains=search_keyword)
+                                                )
+
+        # 从数据库获得的数据
+        else:
+            all_courses = Course.objects.all()
+
         sort = request.GET.get('sort', '')
-        all_courses = Course.objects.all()
         hot_courses = Course.objects.all().order_by('-click_nums')[:3]
 
         # 开始排序逻辑
@@ -178,7 +190,7 @@ class AddCommentsView(View):
                 return HttpResponse(json.dumps({"status": "fail", "msg": "添加失败"}), content_type='application/json')
 
 
-class VideoPlayView(LoginRequiredMixin,View):
+class VideoPlayView(LoginRequiredMixin, View):
     # 视频播放页面
     def get(self, request, video_id):
         # 获得当前页面类型, 用于判断标签的active类
@@ -190,8 +202,8 @@ class VideoPlayView(LoginRequiredMixin,View):
         related_courses = get_related_courses(course_id)
 
         return render(request, 'course-play.html', {
-            'course':current_course ,
+            'course': current_course,
             'current_page': current_page,
             'related_courses': related_courses,
-            'video':video,
+            'video': video,
         })

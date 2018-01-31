@@ -23,5 +23,5 @@ class LoginForm(forms.Form):
 
 
 class ForgetForm(forms.Form):
-    email = forms.CharField(required=True, min_length=5)
+    email = forms.EmailField(required=True, min_length=5)
     captcha = CaptchaField(error_messages={'invalid':u'验证码错误'})

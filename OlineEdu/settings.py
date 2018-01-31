@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'pure_pagination',
 
 ]
+SITE_ID = 1
 
 AUTH_USER_MODEL = 'users.UserProfile'
 
@@ -155,7 +156,7 @@ STATICFILES_DIRS = [
 EMAIL_HOST = 'smtp.126.com'
 EMAIL_PORT = 25
 EMAIL_HOST_USER = 'dudueasy@126.com'
-EMAIL_HOST_PASSWORD = '6953275j'
+EMAIL_HOST_PASSWORD = '111111a'
 EMAIL_USE_TLS = False
 EMAIL_FROM = 'dudueasy@126.com'
 
@@ -169,4 +170,3 @@ PAGINATION_SETTINGS = {
     'SHOW_FIRST_PAGE_WHEN_INVALID': True,
 }
 
-SITE_ID = 1

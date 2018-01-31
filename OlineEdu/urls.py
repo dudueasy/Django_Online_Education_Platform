@@ -22,7 +22,6 @@ from django.views.static import serve
 from OlineEdu.settings import MEDIA_ROOT
 
 from users.views import LoginView, RegisterView, ActiveUserView, ForgetPwdView, ResetView, ModifyPwdView
-from organization.views import OrgView
 
 import xadmin
 
