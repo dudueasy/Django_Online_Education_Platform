@@ -94,7 +94,7 @@ $(function(){
                     Dml.fun.showValidateError($("#pwd"), data.password1);
                 }else if(data.password2){
                     Dml.fun.showValidateError($("#repwd"), data.password2);
-                }else if(data.status == "success"){
+                }else if(data.status === "success"){
                     Dml.fun.showTipsDialog({
                         title:'提交成功',
                         h2:'修改密码成功，请重新登录!',

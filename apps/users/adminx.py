@@ -15,8 +15,8 @@ class BaseSetting(object):
     use_bootswatch = True
 
 class GlobalSetting(object):
-    site_title = '小学僧在线后台管理系统'
-    site_footer = '小学僧在线网'
+    site_title = '小学生在线后台管理系统'
+    site_footer = '小学生在线网'
     menu_style = 'accordion'
 
 class EmailVerifyRecordAdmin(object):

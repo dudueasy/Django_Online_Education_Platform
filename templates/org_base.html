@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <title>
         {% block title %}
-            小学僧在线机构信息
+            小学生在线机构信息
         {% endblock %}
     </title>
 
@@ -33,30 +33,34 @@
                     <div class="fl">
                         <p>联系方式：<b>3333333333</b></p>
                     </div>
-                        {% if request.user.is_authenticated %}
-                            <div class="personal">
+                    {% if request.user.is_authenticated %}
+
+                        <div class="personal">
                             <dl class="user fr">
-                                <dd>{{ request.user.username }}<img class="down fr" src="{% static 'images/top_down.png' %}"/></dd>
+                                <dd>{{ request.user.username }}<img class="down fr"
+                                                                    src="{% static 'images/top_down.png' %}"/></dd>
                                 <dt><img width="20" height="20" src="{{ MEDIA_URL }}{{ request.user.image }}"/></dt>
                             </dl>
                             <div class="userdetail">
-                            	<dl>
-	                                <dt><img width="80" height="80" src="/static/media/image/2016/12/default_big_14.png"/></dt>
-	                                <dd>
-	                                    <h2>django</h2>
-	                                    <p>bobby</p>
-	                                </dd>
+                                <dl>
+                                    <dt><img width="80" height="80" src="{{ MEDIA_URL }}{{ request.user.image }}"/>
+                                    </dt>
+                                    <dd>
+                                        <h2>{{ request.user.nickname }}</h2>
+                                        <p>{{ request.user.username }}</p>
+                                    </dd>
                                 </dl>
                                 <div class="btn">
-	                                <a class="personcenter fl" href="usercenter-info.html">进入个人中心</a>
-	                                <a class="fr" href="/logout/">退出</a>
+                                    <a class="personcenter fl" href="{% url  'users:user_info' %}">个人中心</a>
+                                    <a class="fr" href="/logout/">退出</a>
                                 </div>
                             </div>
                         </div>
-                            {% else %}
-                                <a style="color:white" class="fr registerbtn" href="{% url 'register' %}">注册</a>
-                                <a style="color:white" class="fr loginbtn" href="{% url 'login' %}">登录</a>
-                        {% endif %}
+                    {% else %}
+
+                        <a style="color:white" class="fr registerbtn" href="{% url 'register' %}">注册</a>
+                        <a style="color:white" class="fr loginbtn" href="{% url 'login' %}">登录</a>
+                    {% endif %}
 
                 </div>
             </div>
@@ -102,10 +106,14 @@
     <div class="wp list personal_list comp">
         <div class="left">
             <ul>
-                <li class="{% if current_page == 'home' %}active2 {% endif %}"><a href="{% url 'org:org_home' course_org.id %}">机构首页</a></li>
-                <li class="{% if current_page == 'course' %}active2 {% endif %}"><a href="{% url 'org:org_course' course_org.id %}">机构课程</a></li>
-                <li class="{% if current_page == 'desc' %}active2 {% endif %}"><a href="{% url 'org:org_desc' course_org.id %}">机构介绍</a></li>
-                <li class="{% if current_page == 'teacher' %}active2 {% endif %}"><a href="{% url 'org:org_teacher' course_org.id %}">机构讲师</a></li>
+                <li class="{% if current_page == 'home' %}active2 {% endif %}"><a
+                        href="{% url 'org:org_home' course_org.id %}">机构首页</a></li>
+                <li class="{% if current_page == 'course' %}active2 {% endif %}"><a
+                        href="{% url 'org:org_course' course_org.id %}">机构课程</a></li>
+                <li class="{% if current_page == 'desc' %}active2 {% endif %}"><a
+                        href="{% url 'org:org_desc' course_org.id %}">机构介绍</a></li>
+                <li class="{% if current_page == 'teacher' %}active2 {% endif %}"><a
+                        href="{% url 'org:org_teacher' course_org.id %}">机构讲师</a></li>
             </ul>
         </div>
         {% block right_form %}
@@ -317,8 +325,6 @@
         });
     })
 </script>
-
-
 
 
 </body>
