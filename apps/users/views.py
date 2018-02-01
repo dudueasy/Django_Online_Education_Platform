@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-import json
+import json,locale, sys
 
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login
@@ -177,3 +177,12 @@ class UpdatePwdView(View):
         else:
             return HttpResponse(json.dumps(modify_form.errors), content_type='application/json')
 
+
+def view_locale(request):
+    loc_info = "getlocale: " + str(locale.getlocale()) + \
+               "<br/>getdefaultlocale(): " + str(locale.getdefaultlocale()) + \
+               "<br/>fs_encoding: " + str(sys.getfilesystemencoding()) + \
+               "<br/>sys default encoding: " + str(sys.getdefaultencoding())
+    "<br/>sys default encoding: " + str(sys.getdefaultencoding())
+
+    return HttpResponse(loc_info)

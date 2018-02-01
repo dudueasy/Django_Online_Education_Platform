@@ -21,7 +21,7 @@ from django.views.generic import TemplateView
 from django.views.static import serve
 from OlineEdu.settings import MEDIA_ROOT
 
-from users.views import LoginView, RegisterView, ActiveUserView, ForgetPwdView, ResetView, ModifyPwdView
+from users.views import LoginView, RegisterView, ActiveUserView, ForgetPwdView, ResetView, ModifyPwdView, view_locale
 
 import xadmin
 
@@ -51,4 +51,5 @@ urlpatterns = [
     # 配置媒体/上传文件的访问处理函数,
     url(r'^media/(?P<path>.*/$)', serve, {"document_root": MEDIA_ROOT}),
 
+    url(r'^locale/$', view_locale, {}),
 ]
