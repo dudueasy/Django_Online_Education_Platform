@@ -4,7 +4,8 @@ _date_ = '2018/2/1 下午4:05'
 
 from django.conf.urls import url, include
 from .views import (UserInfoView, UploadImageView, UpdatePwdView, SendEmailCodeView,
-                    UpdateEmailView, MyCourseView,MyFavOrgView, MyFavTeacherView, MyFavCourseView )
+                    UpdateEmailView, MyCourseView,MyFavOrgView, MyFavTeacherView, MyFavCourseView,
+                    MyMessageView)
 
 urlpatterns = [
     # 用户信息页面
@@ -34,5 +35,8 @@ urlpatterns = [
     url(r'^myfav/course/$', MyFavCourseView.as_view(), name='myfav_course'),
 
     # --- 我的收藏子页面结束---
+
+# 我的消息
+    url(r'^my_message/course/$', MyMessageView.as_view(), name='my_message'),
 
 ]

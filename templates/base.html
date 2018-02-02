@@ -34,6 +34,7 @@
                                 <dl>
                                     <dt><img width="80" height="80" src="{{ MEDIA_URL }}{{ request.user.image }}"/>
                                     </dt>
+
                                     <dd>
                                         <h2>{{ request.user.nickname }}</h2>
                                         <p>{{ request.user.username }}</p>
@@ -44,6 +45,9 @@
                                     <a class="fr" href="/logout/">退出</a>
                                 </div>
                             </div>
+                        <a href="{% url 'users:my_message' %}">
+                        <div class="msg-num"><span id="MsgNum">{{request.user.unread_message_nums}}</span></div>
+                        </a>
                         </div>
                     {% else %}
 
@@ -57,7 +61,6 @@
 
             <div class="middle">
                 <div class="wp">
-                    <a href="{% url 'index' %}"><img class="fl" src="{% static 'images/logo.jpg' %}"/></a>
                     <div class="searchbox fr">
                         <div class="selectContainer fl">
                             <span class="selectOption" id="jsSelectOption" data-value="course">

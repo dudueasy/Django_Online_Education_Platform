@@ -15,10 +15,11 @@ from .forms import (LoginForm, RegisterForm, ForgetForm,
                     ModifyPwdForm, UploadImageForm, EmailVerifyForm,
                     EmailVerifyRecordForm, UserInfoForm)
 from courses.models import Course
-from operation.models import UserCourse, UserFavorite
+from operation.models import UserFavorite, UserMessage
 from organization.models import CourseOrg, Teacher
 from utils.email_send import send_register_email
 from utils.mixin_utils import LoginRequiredMixin
+from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
 
 
 # Create your views here.
@@ -100,6 +101,11 @@ class RegisterView(View):
             user_profile.is_active = False
             user_profile.password = make_password(pass_word)
             user_profile.save()
+            # 写入欢迎注册消息
+            user_message = UserMessage()
+            user_message.user = user_profile.id
+            user_message.message = '欢迎注册小学生在线'
+            user_message.save()
 
             send_register_email(user_name)
             return render(request, 'login.html')
@@ -274,6 +280,26 @@ class MyFavCourseView(View):
 
         return render(request, 'usercenter-fav-course.html', {
             'course_list': course_list,
+        })
+
+
+# 个人中心-> 我的消息
+class MyMessageView(View):
+    def get(self, request):
+        all_message = UserMessage.objects.filter(user=request.user.id)
+
+        # 对个人消息进行分页
+        try:
+            page = int(request.GET.get('page', 1))
+        except PageNotAnInteger:
+            page = 1
+
+        p = Paginator(all_message, per_page=5, request=request)
+
+        message = p.page(page)
+
+        return render(request, 'usercenter-message.html', {
+            'message_list': message,
         })
 
 
