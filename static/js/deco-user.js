@@ -12,7 +12,7 @@ function sendCodeChangeEmail($btn){
         cache: false,
         type: "get",
         dataType:'json',
-        url:"/users/sendemail_code/",
+        url:"users/sendemail_code/",
         data:$('#jsChangeEmailForm').serialize(),
         async: true,
         beforeSend:function(XMLHttpRequest){
@@ -22,9 +22,9 @@ function sendCodeChangeEmail($btn){
         success: function(data){
             if(data.email){
                 Dml.fun.showValidateError($('#jsChangeEmail'), data.email);
-            }else if(data.status == 'success'){
+            }else if(data.status === 'success'){
                 Dml.fun.showErrorTips($('#jsChangeEmailTips'), "邮箱验证码已发送");
-            }else if(data.status == 'failure'){
+            }else if(data.status === 'failure'){
                  Dml.fun.showValidateError($('#jsChangeEmail'), "邮箱验证码发送失败");
             }else if(data.status == 'success'){
             }
@@ -61,7 +61,7 @@ var verify = verifyDialogSubmit(
         success: function(data) {
             if(data.email){
                 Dml.fun.showValidateError($('#jsChangeEmail'), data.email);
-            }else if(data.status == "success"){
+            }else if(data.status === "success"){
                 Dml.fun.showErrorTips($('#jsChangePhoneTips'), "邮箱信息更新成功");
                 setTimeout(function(){location.reload();},1000);
             }else{
@@ -168,11 +168,14 @@ $(function(){
                 _self.attr('disabled',true);
             },
             success: function(data) {
+                // form 验证失败的时候, 会在form.errors 字典中包含字段的键值对,
+                // 所以可以用 data.key来访问到对应的错误信息
                 if(data.nick_name){
                     _showValidateError($('#nick_name'), data.nick_name);
                 }else if(data.birday){
                    _showValidateError($('#birth_day'), data.birday);
                 }else if(data.address){
+
                    _showValidateError($('#address'), data.address);
                 }else if(data.status == "failure"){
                      Dml.fun.showTipsDialog({

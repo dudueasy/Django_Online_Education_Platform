@@ -215,7 +215,7 @@
                         xhr.setRequestHeader("X-CSRFToken", "{{ csrf_token }}")
                     },
                     success: function (data) {
-                        console.log(data)
+
                         if (data.status === 'fail') {
                             if (data.msg === '用户未登录') {
                                 window.location.href = "{% url 'login' %}"

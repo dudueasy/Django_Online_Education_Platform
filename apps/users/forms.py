@@ -6,7 +6,7 @@ from __future__ import unicode_literals
 
 from django import forms
 from captcha.fields import CaptchaField
-from .models import UserProfile
+from .models import UserProfile, EmailVerifyRecord
 
 
 class RegisterForm(forms.Form):
@@ -32,3 +32,21 @@ class UploadImageForm(forms.ModelForm):
     class Meta:
         model = UserProfile
         fields = ['image']
+
+class UserInfoForm(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = ['nick_name','birthday','gender','address','mobile']
+
+
+
+
+class EmailVerifyForm(forms.ModelForm):
+    class Meta:
+        model = EmailVerifyRecord
+        fields = ['email']
+
+class EmailVerifyRecordForm(forms.ModelForm):
+    class Meta:
+        model = EmailVerifyRecord
+        fields = ['email','code']

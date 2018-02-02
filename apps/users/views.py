@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-import json,locale, sys
+import json, locale, sys
 
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login
@@ -11,7 +11,12 @@ from django.contrib.auth.hashers import make_password
 from django.http import HttpResponse
 
 from .models import UserProfile, EmailVerifyRecord
-from .forms import LoginForm, RegisterForm, ForgetForm, ModifyPwdForm, UploadImageForm
+from .forms import (LoginForm, RegisterForm, ForgetForm,
+                    ModifyPwdForm, UploadImageForm, EmailVerifyForm,
+                    EmailVerifyRecordForm, UserInfoForm)
+from courses.models import Course
+from operation.models import UserCourse, UserFavorite
+from organization.models import CourseOrg, Teacher
 from utils.email_send import send_register_email
 from utils.mixin_utils import LoginRequiredMixin
 
@@ -147,16 +152,25 @@ class UserInfoView(LoginRequiredMixin, View):
     def get(self, request):
         return render(request, 'usercenter-info.html', {})
 
+    def post(self, request):
+        user_info = UserInfoForm(request.POST, instance=request.user)
+        if user_info.is_valid():
+            user_info.save(commit=True)
+            return HttpResponse(json.dumps({'status': 'success'}), content_type='application/json')
+
+        else:
+            return HttpResponse(json.dumps(user_info.errors), content_type='application/json')
+
+
 # 用户头像上传
 class UploadImageView(LoginRequiredMixin, View):
     def post(self, request):
         image_form = UploadImageForm(request.POST, request.FILES, instance=request.user)
         if image_form.is_valid():
             request.user.save()
-            return HttpResponse(json.dumps({"status":"success"}), content_type='application/json')
+            return HttpResponse(json.dumps({"status": "success"}), content_type='application/json')
         else:
-            return HttpResponse(json.dumps({"status":"fail"}), content_type='application/json')
-
+            return HttpResponse(json.dumps({"status": "fail"}), content_type='application/json')
 
 
 # 个人中心修改密码
@@ -167,8 +181,8 @@ class UpdatePwdView(View):
             pwd1 = request.POST.get('password1', '')
             pwd2 = request.POST.get('password2', '')
             if pwd1 != pwd2:
-            # else:
-                return HttpResponse(json.dumps({"status": "fail",'msg':'密码不一致'}), content_type='application/json')
+                # else:
+                return HttpResponse(json.dumps({"status": "fail", 'msg': '密码不一致'}), content_type='application/json')
             else:
                 user = request.usr
                 user.password = make_password(pwd1)
@@ -178,6 +192,92 @@ class UpdatePwdView(View):
             return HttpResponse(json.dumps(modify_form.errors), content_type='application/json')
 
 
+# 发送验证码
+class SendEmailCodeView(LoginRequiredMixin, View):
+    def get(self, request):
+        email_verify_record_form = EmailVerifyForm(request.GET)
+        if email_verify_record_form.is_valid():
+            email = email_verify_record_form.cleaned_data['email']
+            if UserProfile.objects.filter(email=email):
+                return HttpResponse(json.dumps({"email": "邮箱已存在"}), content_type='application/json')
+
+            # 异常处理
+            try:
+                send_register_email(email, send_type="update_email")
+            except Exception as e:
+                pass
+            return HttpResponse(json.dumps({"status": "success"}), content_type='application/json')
+
+        else:
+            return HttpResponse(json.dumps({"email": "错误的输入"}), content_type='application/json')
+
+
+# 更新用户邮箱地址
+class UpdateEmailView(LoginRequiredMixin, View):
+    def post(self, request):
+        email_verify_record_form = EmailVerifyRecordForm(request.POST)
+        if email_verify_record_form.is_valid():
+            email = email_verify_record_form.cleaned_data['email']
+            code = email_verify_record_form.cleaned_data['code']
+            exisited_verify_record = EmailVerifyRecord.objects.filter(
+                email=email, code=code, send_type='update_email')
+            if exisited_verify_record:
+                request.user.email = email
+                request.user.save()
+
+                return HttpResponse(json.dumps({"status": "success"}), content_type='application/json')
+
+            else:
+                return HttpResponse(json.dumps({"email": "验证码错误"}), content_type='application/json')
+
+        else:
+            return HttpResponse(json.dumps({"email": "错误的输入"}), content_type='application/json')
+
+
+# 个人中心-> 我的课程
+class MyCourseView(LoginRequiredMixin, View):
+    def get(self, request):
+        user_courses = request.user.usercourse_set.all()
+
+        return render(request, 'usercenter-mycourse.html', {
+            'user_courses': user_courses,
+        })
+
+
+# 个人中心-> 我的收藏 -> 课程机构
+class MyFavOrgView(LoginRequiredMixin, View):
+    def get(self, request):
+        user_fav_objs = UserFavorite.objects.filter(user=request.user, fav_type=2)
+        org_list = [CourseOrg.objects.get(id=user_fav.fav_id) for user_fav in user_fav_objs]
+
+        return render(request, 'usercenter-fav-org.html', {
+            'org_list': org_list,
+        })
+
+
+# 个人中心-> 我的收藏 -> 授课教师
+class MyFavTeacherView(View):
+    def get(self, request):
+        user_fav_objs = UserFavorite.objects.filter(user=request.user, fav_type=3)
+        teacher_list = [Teacher.objects.get(id=user_fav.fav_id) for user_fav in user_fav_objs]
+
+        return render(request, 'usercenter-fav-teacher.html', {
+            'teacher_list': teacher_list,
+        })
+
+
+# 个人中心-> 我的收藏 -> 公开课程
+class MyFavCourseView(View):
+    def get(self, request):
+        user_fav_objs = UserFavorite.objects.filter(user=request.user, fav_type=1)
+        course_list = [Course.objects.get(id=user_fav.fav_id) for user_fav in user_fav_objs]
+
+        return render(request, 'usercenter-fav-course.html', {
+            'course_list': course_list,
+        })
+
+
+# 检验环境字符集的方法
 def view_locale(request):
     loc_info = "getlocale: " + str(locale.getlocale()) + \
                "<br/>getdefaultlocale(): " + str(locale.getdefaultlocale()) + \

@@ -69,7 +69,7 @@
 
             <div class="middle">
                 <div class="wp">
-                    <a href="index.html"><img class="fl" src="{% static 'images/logo2.png' %}"/></a>
+                    <a href="{% url 'index' %}"><img class="fl" src="{% static 'images/logo2.png' %}"/></a>
                     <h1>我的慕学网</h1>
                 </div>
             </div>
@@ -82,8 +82,8 @@
     <section>
         <div class="wp">
             <ul class="crumbs">
-                <li><a href="index.html">首页</a>></li>
-                <li><a href="/user/home/">个人中心</a>></li>
+                <li><a href="{% url 'index' %}">首页</a>></li>
+                <li><a href="{% url 'users:user_info' %}">个人中心</a>></li>
                 <li>个人信息</li>
             </ul>
         </div>
@@ -95,9 +95,9 @@
     <div class="wp list personal_list">
         <div class="left">
             <ul>
-                <li class="active2"><a href="usercenter-info.html">个人资料</a></li>
-                <li><a href="usercenter-mycourse.html">我的课程</a></li>
-                <li><a href="usercenter-fav-course.html">我的收藏</a></li>
+                <li class="active2"><a href="{% url 'users:user_info' %}">个人资料</a></li>
+                <li><a href="{% url 'users:mycourse' %}">我的课程</a></li>
+                <li><a href="{% url 'users:myfav_org' %}">我的收藏</a></li>
                 <li>
                     <a href="usercenter-message.html" style="position: relative;">
                         我的消息
@@ -251,6 +251,7 @@
             <div class="button">
                 <input class="changeemai_btn" id="jsChangeEmailBtn" type="button" value="完成"/>
             </div>
+            {% csrf_token %}
         </form>
     </div>
 
@@ -342,13 +343,15 @@
         $.ajax({
             cache: false,
             type: "POST",
-            url: "/org/add_fav/",
+            url: "{% url 'org:add_fav' %}",
             data: {
                 fav_type: 1,
                 fav_id: favid,
-                csrfmiddlewaretoken: '799Y6iPeEDNSGvrTu3noBrO4MBLv6enY'
             },
             async: true,
+            beforeSend: function (xhr, settings) {
+                xhr.setRequestHeader("X-CSRFToken", "{{ csrf_token }}");
+            },
             success: function (data) {
                 Dml.fun.winReload();
             }
@@ -361,13 +364,15 @@
         $.ajax({
             cache: false,
             type: "POST",
-            url: "/org/add_fav/",
+            url: "{% url 'org:add_fav' %}",
             data: {
                 fav_type: 3,
                 fav_id: favid,
-                csrfmiddlewaretoken: '799Y6iPeEDNSGvrTu3noBrO4MBLv6enY'
             },
             async: true,
+            beforeSend: function (xhr, settings) {
+                xhr.setRequestHeader("X-CSRFToken", "{{ csrf_token }}");
+            },
             success: function (data) {
                 Dml.fun.winReload();
             }
@@ -381,13 +386,15 @@
         $.ajax({
             cache: false,
             type: "POST",
-            url: "/org/add_fav/",
+            url: "{% url 'org:add_fav' %}",
             data: {
                 fav_type: 2,
                 fav_id: favid,
-                csrfmiddlewaretoken: '799Y6iPeEDNSGvrTu3noBrO4MBLv6enY'
             },
             async: true,
+            beforeSend: function (xhr, settings) {
+                xhr.setRequestHeader("X-CSRFToken", "{{ csrf_token }}");
+            },
             success: function (data) {
                 Dml.fun.winReload();
             }
