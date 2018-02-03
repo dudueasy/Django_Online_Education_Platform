@@ -39,7 +39,7 @@
     <div class="right companycenter layout">
         <div class="head">
             <h1>机构教师</h1>
-            <a class="green fr more" href="{% url 'org:org_teacher' course_org.id %}">查看更多 > </a>
+            <a class="green fr more" href="{% url 'org:teacher_detail' course_org.id %}">查看更多 > </a>
         </div>
 
         {% for teacher in all_teacher %}
@@ -51,11 +51,16 @@
                     </div>
                     <div class="right">
                         <div class="top">
-                            <div class="fl">
-                                <a href=""><h1>java开发教程</h1></a>
-                                <span>发表于：2015-10-12</span>
-                            </div>
+                            {% for course in teacher.course_set.all|slice:'1' %}
+
+                                <div class="fl">
+                                    <a href=""><h1>{{ course.name }}</h1></a>
+                                    <span>发表于：{{ course.add_time }}</span>
+                                </div>
+                            {% endfor %}
+
                         </div>
+
                         <div class="middle" style="border-bottom:0;">课程介绍</div>
                     </div>
                 </div>
