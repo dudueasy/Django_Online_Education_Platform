@@ -160,7 +160,7 @@ class OrgDescView(View):
 
 
 class OrgTeacherView(View):
-    '''机构课程页'''
+    '''机构课程页机构教师'''
 
     def get(self, request, org_id):
         current_page = 'teacher'
@@ -313,10 +313,11 @@ class TeacherDetailView(View):
         teacher_has_favorited = False
         org_has_favorited = False
 
-        if UserFavorite.objects.filter(user=request.user, fav_id=teacher.id, fav_type=3):
-            teacher_has_favorited = True
-        if UserFavorite.objects.filter(user=request.user, fav_id=teacher_org.id, fav_type=2):
-            org_has_favorited = True
+        if request.user.is_authenticated():
+            if UserFavorite.objects.filter(user=request.user, fav_id=teacher.id, fav_type=3):
+                teacher_has_favorited = True
+            if UserFavorite.objects.filter(user=request.user, fav_id=teacher_org.id, fav_type=2):
+                org_has_favorited = True
 
         return render(request, 'teacher-detail.html', {
             'teacher': teacher,
