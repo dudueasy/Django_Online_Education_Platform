@@ -21,15 +21,19 @@ from django.views.generic import TemplateView
 from django.views.static import serve
 from OlineEdu.settings import MEDIA_ROOT
 
-from users.views import LoginView, RegisterView, ActiveUserView, ForgetPwdView, ResetView, ModifyPwdView, view_locale
+from users.views import (LoginView, LogoutView, RegisterView, ActiveUserView,
+                         ForgetPwdView, ResetView, ModifyPwdView, IndexView, view_locale)
 
 import xadmin
 
 urlpatterns = [
     url(r'^xadmin/', xadmin.site.urls),
     # url(r'^admin/', admin.site.urls),
-    url('^$', TemplateView.as_view(template_name='index.html'), name='index'),
+    url('^$', IndexView.as_view(), name='index'),
+    # 用户登录, 登出
     url('^login/$', LoginView.as_view(), name='login'),
+    url('^logout/$', LogoutView.as_view(), name='logout'),
+
     url('^register/$', RegisterView.as_view(), name='register'),
     url(r'^captcha/', include('captcha.urls')),
 

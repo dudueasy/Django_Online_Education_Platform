@@ -42,12 +42,13 @@
                                 </dl>
                                 <div class="btn">
                                     <a class="personcenter fl" href="{% url  'users:user_info' %}">个人中心</a>
-                                    <a class="fr" href="/logout/">退出</a>
+                                    <a class="fr" href="{% url 'logout' %}">退出</a>
                                 </div>
                             </div>
-                        <a href="{% url 'users:my_message' %}">
-                        <div class="msg-num"><span id="MsgNum">{{request.user.unread_message_nums}}</span></div>
-                        </a>
+                            <a href="{% url 'users:my_message' %}">
+                                <div class="msg-num"><span id="MsgNum">{{ request.user.unread_message_nums }}</span>
+                                </div>
+                            </a>
                         </div>
                     {% else %}
 
@@ -124,9 +125,9 @@
     <div class="footer">
         <div class="wp">
             <ul class="cont">
-                <li class="logo"><a href="{% url 'index' %}"><img src="{% static 'images/footlogo.png' %}"/></a></li>
-                <li class="code"><img src="{% static '#' %}"/>
-                    <p class="center">扫描关注微信</p></li>
+{#                <li class="logo"><a href="{% url 'index' %}"><img src="{% static 'images/footlogo.png' %}"/></a></li>#}
+{#                <li class="code"><img src="{% static '#' %}"/>#}
+{#                    <p class="center">扫描关注微信</p></li>#}
                 <li class="third"><img class="fl" src="{% static 'images/tell.png' %}"/>
                     <p class="tell">33333333</p>
                     <p class="time">周一至周日 9:00-18:00</p></li>

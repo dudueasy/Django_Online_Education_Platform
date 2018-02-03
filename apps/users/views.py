@@ -2,18 +2,20 @@
 from __future__ import unicode_literals
 import json, locale, sys
 
-from django.shortcuts import render
-from django.contrib.auth import authenticate, login
+from django.shortcuts import render, redirect
+from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.backends import ModelBackend
 from django.db.models import Q
 from django.views.generic.base import View
 from django.contrib.auth.hashers import make_password
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
+from django.core.urlresolvers import reverse
 
-from .models import UserProfile, EmailVerifyRecord
+from .models import UserProfile, EmailVerifyRecord, Banner
 from .forms import (LoginForm, RegisterForm, ForgetForm,
                     ModifyPwdForm, UploadImageForm, EmailVerifyForm,
                     EmailVerifyRecordForm, UserInfoForm)
+
 from courses.models import Course
 from operation.models import UserFavorite, UserMessage
 from organization.models import CourseOrg, Teacher
@@ -128,13 +130,20 @@ class LoginView(View):
             if user is not None:
                 if user.is_active:
                     login(request, user)
-                    return render(request, 'index.html', {})
+                    return redirect('index')
                 else:
                     return render(request, 'login.html', {"msg": "用户未激活!"})
             else:
                 return render(request, 'login.html', {"msg": "用户名或密码错误!", "login_form": login_form})
         else:
             return render(request, 'login.html', {"login_form": login_form})
+
+
+# 登出页面
+class LogoutView(View):
+    def get(self, request):
+        logout(request)
+        return redirect('index')
 
 
 class ForgetPwdView(View):
@@ -288,6 +297,12 @@ class MyMessageView(View):
     def get(self, request):
         all_message = UserMessage.objects.filter(user=request.user.id)
 
+        # 用户进入消息页面后清空未读信息.
+        all_unread_messages = UserMessage.objects.filter(user=request.user.id, has_read=False)
+        for unread_message in all_unread_messages:
+            unread_message.has_read = True
+            unread_message.save()
+
         # 对个人消息进行分页
         try:
             page = int(request.GET.get('page', 1))
@@ -300,6 +315,28 @@ class MyMessageView(View):
 
         return render(request, 'usercenter-message.html', {
             'message_list': message,
+        })
+
+
+# 网站首页
+class IndexView(View):
+    def get(self, request):
+        # 取出轮播图
+        # 获得 Banner Model下的数据
+        all_banners = Banner.objects.all().order_by('index')
+
+        # 获得Course Model 下 is_banner 的数据, 和非banner 的数据
+        non_banner_courses = Course.objects.filter(is_banner=False)[:6]
+        banner_courses = Course.objects.filter(is_banner=True)[:3]
+
+        # 获得15个机构的数据
+        course_orgs = CourseOrg.objects.all()[:15]
+
+        return render(request, 'index.html', {
+            'all_banners': all_banners,
+            'non_banner_courses': non_banner_courses,
+            'banner_courses': banner_courses,
+            'course_orgs': course_orgs,
         })
 
 

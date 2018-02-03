@@ -58,6 +58,7 @@ class UserMessage(models.Model):
         return self.message
 
 
+
 class UserCourse(models.Model):
     user = models.ForeignKey(UserProfile, default='1', verbose_name=u'用户')
     course = models.ForeignKey(Course, default='1', verbose_name=u'课程')

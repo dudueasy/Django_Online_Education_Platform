@@ -122,6 +122,8 @@ class CourseInfoView(LoginRequiredMixin, View):
 
         related_courses = get_related_courses(course_id)
         current_course = Course.objects.get(id=int(course_id))
+        current_course.students += 1
+        current_course.save()
 
         # 关联用户和课程
         user_course = UserCourse.objects.filter(user=request.user, course=current_course)
