@@ -51,7 +51,7 @@ i {
 .course-infos .w {
     height: 156px;
     z-index: 1;
-    background-color: #504d3b;
+    background-color: #293948;
     margin-top: 20px;
 }
 .course-infos .path {
@@ -328,7 +328,7 @@ i {
     color: #14191e;
 }
 .course-info-main .aside .teacher-info .tit a:hover {
-    color: #f01400;
+    color: #64cbb3;
 }
 .course-info-main .aside .teacher-info .job {
     font-size: 12px;
@@ -604,7 +604,7 @@ i {
     right: 0;
     top: 0;
     line-height: 48px;
-    color: #39b94e;
+    color: #64cbb3;
 }
 .downlist li a:hover {
     text-decoration: underline;
@@ -742,11 +742,11 @@ i {
     top: 19px;
 }
 .course-menu a:hover {
-    color: #f01400;
+    color: #64cbb3;
 }
 .course-menu a.active {
-    border-bottom: 2px solid #f01400;
-    color: #f01400;
+    border-bottom: 2px solid #64cbb3;
+    color: #64cbb3;
     height: 55px;
     font-weight: bold;
 }

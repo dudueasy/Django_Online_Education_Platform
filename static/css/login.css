@@ -107,17 +107,17 @@ a:hover{
 }
 .unslider-arrow.prev {
     left: 0;
-    background:url(../images/slide_l.png) no-repeat center center;
+    background:url(/static/images/slide_l.png) no-repeat center center;
 }
 .unslider-arrow.prev:hover {
-    background:url(../images/slide_l_1.png) no-repeat center center;
+    background:url(/static/images/slide_l_1.png) no-repeat center center;
 }
 .unslider-arrow.next{
     right:0;
-    background:url(../images/slide_r.png) no-repeat center center;
+    background:url(/static/images/slide_r.png) no-repeat center center;
 }
 .unslider-arrow.next:hover{
-    background:url(../images/slide_r_1.png) no-repeat center center;
+    background:url(/static/images/slide_r_1.png) no-repeat center center;
 }
 .imgslide .dots{
     position:absolute;

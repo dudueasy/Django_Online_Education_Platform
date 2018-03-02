@@ -19,7 +19,7 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from django.views.generic import TemplateView
 from django.views.static import serve
-from OlineEdu.settings import MEDIA_ROOT
+from OlineEdu.settings import MEDIA_ROOT, STATIC_ROOT
 
 from users.views import (LoginView, LogoutView, RegisterView, ActiveUserView,
                          ForgetPwdView, ResetView, ModifyPwdView, IndexView, view_locale)
@@ -55,5 +55,15 @@ urlpatterns = [
     # 配置媒体/上传文件的访问处理函数,
     url(r'^media/(?P<path>.*/$)', serve, {"document_root": MEDIA_ROOT}),
 
+    # 用来代理静态的访问处理函数
+    url(r'^static/(?P<path>.*/$)', serve, {"document_root": STATIC_ROOT}),
+
+    # 用来检测服务器环境语言的函数
     url(r'^locale/$', view_locale, {}),
 ]
+
+# 全局404页面配置
+handler404 = "users.views.page_not_found"
+
+# 全局500页面配置
+handler500 = "users.views.internal_server_error"
