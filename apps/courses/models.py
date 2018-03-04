@@ -37,8 +37,15 @@ class Course(models.Model):
         return self.get_degree_display()
 
     def get_lesson_nums(self):
-        # 获取章节/课程 数量
+        # 获取章节 数量
         return self.lesson_set.all().count()
+
+    get_lesson_nums.short_description = '章节数'
+
+    def get_link(self):
+        from django.utils.safestring import mark_safe
+        return mark_safe("<a href='localhost:8000'>回到首页</a>")
+
 
     def get_all_course_lesson(self):
         # 获取所有课程信息
@@ -54,6 +61,19 @@ class Course(models.Model):
 
     def __unicode__(self):
         return self.name
+
+
+# 注册一个类, 继承 Course Model, 可访问 Course 的所有数据.
+# 这个类用来在后台管理系统中显示 is_banner 为true 的字段.
+
+class BannerCourse(Course):
+    class Meta:
+        verbose_name = u'轮播课程'
+        verbose_name_plural = verbose_name
+        # 设置 proxy 用来代理 Course 表, 而不是生成另一张表
+        proxy = True
+
+
 
 
 class Lesson(models.Model):

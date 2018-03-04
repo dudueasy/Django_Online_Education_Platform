@@ -20,7 +20,7 @@ class CourseOrgAdmin(object):
     list_display = ['name', 'desc','click_num','fav_nums','address','city', 'category','add_time']
     search_fields = ['name', 'desc','click_num','fav_nums','address','category','city']
     list_filter = ['name', 'desc','click_num','fav_nums','address','category','city__name','add_time']
-
+    relfield_style='fk_ajax'
 
 class TeacherAdmin(object):
 

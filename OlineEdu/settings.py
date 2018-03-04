@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 """
 Django settings for OlineEdu project.
 
@@ -25,7 +27,8 @@ sys.path.insert(0, os.path.join(BASE_DIR, 'extra_apps'))
 SECRET_KEY = '2z=#g^!z&)$74r_q-)24vep^e8azng027a$y=&ap^&@r6_irn8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+# DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -157,7 +160,9 @@ EMAIL_FROM = 'dudueasy@126.com'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+# STATIC_ROOT 属性在开发模式需要禁用
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # django-pure-pagination setting
 PAGINATION_SETTINGS = {

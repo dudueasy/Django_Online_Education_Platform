@@ -13,12 +13,12 @@ from django.utils.encoding import smart_text
 from django.utils.translation import ugettext as _
 from django.views.decorators.debug import sensitive_post_parameters
 from django.forms import ModelMultipleChoiceField
-from django.contrib.auth import get_user_model
 from xadmin.layout import Fieldset, Main, Side, Row, FormHelper
 from xadmin.sites import site
 from xadmin.util import unquote
 from xadmin.views import BaseAdminPlugin, ModelFormAdminView, ModelAdminView, CommAdminView, csrf_protect_m
 
+from django.contrib.auth import get_user_model
 User = get_user_model()
 
 ACTION_NAME = {
@@ -265,5 +265,6 @@ class ChangeAccountPasswordView(ChangePasswordView):
 user_model = settings.AUTH_USER_MODEL.lower().replace('.','/')
 site.register_view(r'^%s/(.+)/password/$' % user_model,
                    ChangePasswordView, name='user_change_password')
+
 site.register_view(r'^account/password/$', ChangeAccountPasswordView,
                    name='account_password')
