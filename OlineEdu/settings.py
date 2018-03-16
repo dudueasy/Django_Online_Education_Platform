@@ -27,8 +27,8 @@ sys.path.insert(0, os.path.join(BASE_DIR, 'extra_apps'))
 SECRET_KEY = '2z=#g^!z&)$74r_q-)24vep^e8azng027a$y=&ap^&@r6_irn8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = False
-DEBUG = True
+DEBUG = False
+# DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -147,9 +147,9 @@ USE_TZ = False
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
-]
+# STATICFILES_DIRS = [
+#    os.path.join(BASE_DIR, 'static')
+# ]
 
 EMAIL_HOST = 'smtp.126.com'
 EMAIL_PORT = 25
@@ -162,7 +162,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # STATIC_ROOT 属性在开发模式需要禁用
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # django-pure-pagination setting
 PAGINATION_SETTINGS = {
