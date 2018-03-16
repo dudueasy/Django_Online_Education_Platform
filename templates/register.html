@@ -75,8 +75,8 @@
             </a>
             <ul class="fr hd-bar">
                 <li>服务电话：<span>33333333</span></li>
-                <li><a href="login.html">[登录]</a></li>
-                <li class="active"><a href="register.html">[注册]</a></li>
+                <li><a href="{% url 'login' %}">[登录]</a></li>
+                <li class="active"><a href="{% url 'register' %}">[注册]</a></li>
             </ul>
         </div>
     </div>
@@ -168,7 +168,7 @@
                         {% csrf_token %}
                     </form>
                 </div>
-                <p class="form-p">已有账号？<a href="login.html">[立即登录]</a></p>
+                <p class="form-p">已有账号？<a href="{% url 'login' %}">[立即登录]</a></p>
             </div>
         </div>
     </div>

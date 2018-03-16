@@ -47,7 +47,7 @@ def send_register_email(email, send_type='register'):
 
     if send_type == 'register':
         email_title = '在线注册激活连接'
-        email_body = '请点击下面的连接激活你的账号: http://192.168.1.105:8080/active/{0}'.format(random_str)
+        email_body = '请点击下面的连接激活你的账号: http://139.199.87.221/active/{0}'.format(random_str)
 
         send_status = send_mail(email_title, email_body, EMAIL_FROM, [email])
         if send_status:
@@ -55,7 +55,7 @@ def send_register_email(email, send_type='register'):
 
     if send_type == 'forget':
         email_title = '在线密码重置'
-        email_body = '请点击下面的连接重置密码: http://127.0.0.1:8000/reset/{0}'.format(random_str)
+        email_body = '请点击下面的连接重置密码: http://139.199.87.221/reset/{0}'.format(random_str)
 
         send_status = send_mail(email_title, email_body, EMAIL_FROM, [email])
         if send_status:
