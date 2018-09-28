@@ -11,7 +11,7 @@
             {% for course in all_courses %}
                 <div class="module1_5 box">
                     {# 课程的图片 #}
-                    <a href="{% url 'course:course_detail' course.id %}"><img width="214"
+                    <a href="{% url 'course:course_detail' course.id %}"><img width="180"
                                                                               src="{{ MEDIA_URL }}{{ course.image }}"/></a>
                     <div class="des">
                         {# 课程名#}

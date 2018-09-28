@@ -79,7 +79,7 @@
 
                                         <li>
                                             <a href="{% url 'course:course_detail' course.id %}">
-                                                <img width="470" height="300"
+                                                <img  height="300"
                                                      src="{{ MEDIA_URL }}{{ course.image }}"/>
                                             </a>
                                         </li>
@@ -91,9 +91,9 @@
                         </div>
 
                         {% for course in non_banner_courses %}
-                            <div class="module1_{{ forloop.counter|add:2 }} box">
+                            <div class="module1_{{ forloop.counter|add:2 }} box index">
                                 <a href="{% url 'course:course_detail' course.id %}">
-                                    <img width="233" height="190" src="{{ MEDIA_URL }}{{ course.image }}"/>
+                                    <img height="160" src="{{ MEDIA_URL }}{{ course.image }}"/>
                                 </a>
                                 <div class="des">
                                     <a href="{% url 'course:course_detail' course.id %}">
@@ -134,7 +134,7 @@
 
                                     <a href="{% url 'org:org_home' org.id %}">
                                         <div class="company">
-                                            <img width="184" height="100" src="{{ MEDIA_URL }}{{ org.image }}"/>
+                                            <img height="100" src="{{ MEDIA_URL }}{{ org.image }}"/>
                                             <div class="score">
                                                 <div class="circle">
                                                     <h2>{{ org.tag }}</h2>

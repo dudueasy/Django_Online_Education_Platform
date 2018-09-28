@@ -1530,7 +1530,12 @@ textarea:focus {
 .imgslide3 li,
 .imgslide4 li,
 .imgslide5 li {
-    float: left;
+	float:left;
+	width: 470px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	!important;
 }
 
 .unslider-arrow,
@@ -1814,6 +1819,7 @@ textarea:focus {
     position: relative;
     float: left;
     background: #fff;
+
 }
 
 .module .left {
@@ -1840,7 +1846,6 @@ textarea:focus {
 }
 
 .module .box img {
-    width: 100%;
     transition: all 1s ease 0s;
 }
 
@@ -1892,7 +1897,24 @@ textarea:focus {
     float: left;
     overflow: hidden;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
 }
+
+.group_list .box.course_list {
+    height: 370px;
+    border: 1px solid #ccc;
+    width: 285px;
+    float: left;
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+
 
 .group_list .box:hover {
     border-color: #717171;
@@ -1903,9 +1925,6 @@ textarea:focus {
     filter: Alpha(opacity=50);
 }
 
-.group_list .box img {
-    height: 190px;
-}
 
 .group_list .des {
     width: 94%;
@@ -2800,9 +2819,10 @@ footer .footer .line {
 }
 
 .list .group_list .box {
-    width: 280px;
-    height: 320px;
-    margin: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
 }
 
@@ -3332,7 +3352,6 @@ footer .footer .line {
 }
 
 .butler_list_box dt img {
-    width: 100%;
     float: left;
     text-align: center;
 }
@@ -4952,7 +4971,7 @@ footer .footer .line {
 }
 
 .butler_list.company dt {
-    width: 200px;
+    width: 160px;
     height: 120px;
     border-width: 1px;
     border-radius: 0;
@@ -4961,7 +4980,7 @@ footer .footer .line {
 }
 
 .butler_list.company dd {
-    width: 678px !important;
+    width: 700px !important;
 }
 
 .butler_list.company dd h1 {
@@ -8191,11 +8210,14 @@ table .upload-btn {
 }
 
 .butler-company-box .pic {
-    width: 150px;
-    height: 80px;
-    margin: 20px auto;
-    border: 1px solid #eaeaea;
-    overflow: hidden;
+	width: 150px;
+	height: 80px;
+	margin: 20px auto;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 .butler-company-box .tell {
