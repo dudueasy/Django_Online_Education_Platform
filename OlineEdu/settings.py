@@ -152,7 +152,7 @@ STATIC_URL = '/static/'
 # ]
 
 EMAIL_HOST = 'smtp.126.com'
-EMAIL_PORT = 25
+EMAIL_PORT = 25 
 EMAIL_HOST_USER = 'dudueasy@126.com'
 EMAIL_HOST_PASSWORD = '111111a'
 EMAIL_USE_TLS = False
