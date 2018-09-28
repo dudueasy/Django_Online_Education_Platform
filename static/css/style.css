@@ -1,7 +1,7 @@
 body {
     overflow: auto;
-    width:1200px;
-    min-width:1200px;
+    width: 1200px;
+    min-width: 1200px;
     margin: 0 auto !important;
 }
 
@@ -71,10 +71,12 @@ table.linehei50 td, table.linehei50 th {
 .errorpage .wp {
     width: 1000px;
 }
-.footer .code img{
-	width: 100px;
-	height: 100px;
+
+.footer .code img {
+    width: 100px;
+    height: 100px;
 }
+
 .errorpage .cont {
     width: 100%;
     height: 50%;
@@ -613,7 +615,7 @@ caption {
     padding: 15px;
     margin: 30px auto;
     background: #fff;
-    overflow:hidden;
+    overflow: hidden;
     display: none;
 }
 
@@ -718,7 +720,7 @@ caption {
 }
 
 .promptbox .cont {
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .promptbox .cont img {
@@ -726,8 +728,8 @@ caption {
 }
 
 .promptbox .cont h2 {
-    height:135px;
-    line-height:40px;
+    height: 135px;
+    line-height: 40px;
     font-size: 20px;
 }
 
@@ -761,7 +763,7 @@ textarea:focus {
     width: 318px;
     height: 80px;
     padding: 10px;
-    margin-bottom:40px;
+    margin-bottom: 40px;
 }
 
 .bidtips.promptbox .button {
@@ -1307,7 +1309,7 @@ textarea:focus {
 .header .middle .wp {
     height: 100%;
     background: #283949 url(/static/images/background_header.jpg) no-repeat center;
-    background-size: cover ;
+    background-size: cover;
 }
 
 /*select*/
@@ -1589,9 +1591,10 @@ textarea:focus {
     width: 80px;
     margin-left: -40px;
 }
-.imgslide .dots{
-    width:110px;
-    margin-left:-55px;
+
+.imgslide .dots {
+    width: 110px;
+    margin-left: -55px;
 }
 
 .imgslide .dots li,
@@ -1675,7 +1678,7 @@ textarea:focus {
     background: url(/static/images/banner_icon2.png) no-repeat 8px center;
 }
 
-.banner .fr .icon3{
+.banner .fr .icon3 {
     background: url(/static/images/banner_icon3.png) no-repeat 8px center;
 }
 
@@ -2803,7 +2806,6 @@ footer .footer .line {
     overflow: hidden;
 }
 
-
 .list .group_list .box .des {
     height: 70px;
     /*width: 100%;*/
@@ -3410,7 +3412,7 @@ footer .footer .line {
 
 .butler_list .cont {
     margin-bottom: 10px;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .butler_list .cont li, .companyranklist .cont li {
@@ -3422,7 +3424,7 @@ footer .footer .line {
     margin-right: 15px;
     padding-left: 18px;
     color: #848484;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .butler_list .cont li {
@@ -4734,7 +4736,7 @@ footer .footer .line {
 
 .autoTxtCount {
     position: relative;
-    width:100%;
+    width: 100%;
 }
 
 .write_diary {
@@ -4800,15 +4802,15 @@ footer .footer .line {
 .write_diary .step li {
     float: left;
     width: 50px;
-    height:50px;
+    height: 50px;
     background: #afafaf;
     border: 3px solid #d7d7d7;
     border-radius: 50%;
     margin-right: 10px;
     color: #fff;
-    font-size:12px;
+    font-size: 12px;
     cursor: pointer;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .write_diary .step li:hover, .write_diary .step .active {
@@ -5326,10 +5328,10 @@ footer .footer .line {
 }
 
 .companycenter .group_list .box {
-    height: 300px;
-    position: relative;
-    margin: 30px 10px;
-    width: 214px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .companycenter .group_list .box .des {
@@ -5706,7 +5708,7 @@ footer .footer .line {
 .contractchanges input {
     width: 124px;
     line-height: 30px;
-    height:30px;
+    height: 30px;
 }
 
 .contractchanges select {
@@ -6042,7 +6044,7 @@ footer .footer .line {
 }
 
 .personal_des .add-row,
-.personal_des .add2-row{
+.personal_des .add2-row {
     display: block;
     color: #717171;
     width: 100px;
@@ -6057,13 +6059,13 @@ footer .footer .line {
 }
 
 .personal_des .add-row:hover,
-.personal_des .add2-row:hover{
+.personal_des .add2-row:hover {
     background: #717171;
     color: #fff;
 }
 
 .personal_des .delete-row,
-.personal_des .delete2-row{
+.personal_des .delete2-row {
     display: block;
     float: right;
     margin: 4px 0 4px 10px;
@@ -6074,7 +6076,7 @@ footer .footer .line {
     color: #fff;
 }
 
-.personal_des .cannot-delete-row{
+.personal_des .cannot-delete-row {
     display: block;
     float: right;
     margin: 4px 0 4px 10px;
@@ -7061,7 +7063,7 @@ footer .footer .line {
 
 .refundbtn,
 .evlbtn,
-.hkEvalbtn{
+.hkEvalbtn {
     cursor: pointer;
 }
 
@@ -7897,16 +7899,17 @@ footer .footer .line {
     margin: 0 auto;
 }
 
-.coninform .contract-change-box{
-    margin-top:40px;
-    padding-top:40px;
-    border-top:1px solid #eaeaea;
+.coninform .contract-change-box {
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 1px solid #eaeaea;
 }
- .contract-change-box textarea{
-     width:874px;
-     margin-left:22px;
-     margin-top:5px;
- }
+
+.contract-change-box textarea {
+    width: 874px;
+    margin-left: 22px;
+    margin-top: 5px;
+}
 
 .coninform .contract-box table {
     margin: 0 auto;
@@ -7924,8 +7927,8 @@ footer .footer .line {
     text-indent: 10px;
 }
 
-.coninform .contract-box #contract_change2 input{
-    width:116px;
+.coninform .contract-box #contract_change2 input {
+    width: 116px;
 }
 
 .coninform .contract-box input:focus {
@@ -7936,8 +7939,8 @@ footer .footer .line {
     width: 160px;
 }
 
-.contract-box #contract_change2 select{
-    width:116px;
+.contract-box #contract_change2 select {
+    width: 116px;
 }
 
 .contract-box .add-row {
@@ -7981,7 +7984,7 @@ footer .footer .line {
     height: 110px;
     margin-right: 10px;
     border: 1px solid #ccc;
-    position:relative;
+    position: relative;
 }
 
 .bigbox .uppics > li > label {
@@ -8471,8 +8474,8 @@ table .upload-btn {
     color: #fff !important;
 }
 
-.btn-hkpay{
-    width:200px;
+.btn-hkpay {
+    width: 200px;
     margin: 0 auto 60px;
 }
 
@@ -8714,7 +8717,7 @@ table .upload-btn {
     min-height: 216px;
 }
 
-.help-detail p{
+.help-detail p {
     padding-top: 8px;
 }
 
@@ -8859,89 +8862,89 @@ table .upload-btn {
     width: 150% !important;
 }
 
-.empty-box{
-    min-height:200px;
-    text-indent:20px;
-    padding-top:20px;
-    font-size:14px;
+.empty-box {
+    min-height: 200px;
+    text-indent: 20px;
+    padding-top: 20px;
+    font-size: 14px;
 }
 
-.diary-edit{
-    padding:5px 15px;
-    background:#717171;
+.diary-edit {
+    padding: 5px 15px;
+    background: #717171;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    color:#fff;
+    color: #fff;
     cursor: pointer;
 }
 
-.diary-edit:hover{
-    background:#00ad29;
+.diary-edit:hover {
+    background: #00ad29;
 }
 
-.delete-diary-pic{
-    position:absolute;
-    top:0;
-    right:0;
-    padding:5px 10px;
-    line-height:normal;
-    background:rgba(0,0,0,0.6);
-    background:#000\9;
-    color:#fff;
-    text-align:center;
-    z-index:9999;
-    cursor:pointer;
-}
-
-.user-sinput-box{
-    position:relative;
-}
-
-.user-list{
+.delete-diary-pic {
     position: absolute;
-    left:110px;
-    top:45px;
-    width:250px;
-    max-height:250px;
-    padding:10px 0;
-    overflow-x:hidden;
-    overflow-y:scroll;
-    background:#fff;
-    border:1px solid #717171;
-    z-index:999;
-    display:none;
-}
-
-.diary-user-list{
-    width:259px;
-    left:80px;
-    bottom:48px;
-    top:auto;
-}
-
-.user-list > li{
-    width: 100%;
-    margin-top:10px;
-    line-height:20px;
-    text-indent:10px;
-    background: #efefef;
-    color:#333;
+    top: 0;
+    right: 0;
+    padding: 5px 10px;
+    line-height: normal;
+    background: rgba(0, 0, 0, 0.6);
+    background: #000 \9;
+    color: #fff;
+    text-align: center;
+    z-index: 9999;
     cursor: pointer;
 }
 
-.diary-user-list > li{
-    height:45px;
-    line-height:45px;
+.user-sinput-box {
+    position: relative;
 }
 
-.user-list > li:first-child{
-    margin-top:0;
+.user-list {
+    position: absolute;
+    left: 110px;
+    top: 45px;
+    width: 250px;
+    max-height: 250px;
+    padding: 10px 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background: #fff;
+    border: 1px solid #717171;
+    z-index: 999;
+    display: none;
+}
+
+.diary-user-list {
+    width: 259px;
+    left: 80px;
+    bottom: 48px;
+    top: auto;
+}
+
+.user-list > li {
+    width: 100%;
+    margin-top: 10px;
+    line-height: 20px;
+    text-indent: 10px;
+    background: #efefef;
+    color: #333;
+    cursor: pointer;
+}
+
+.diary-user-list > li {
+    height: 45px;
+    line-height: 45px;
+}
+
+.user-list > li:first-child {
+    margin-top: 0;
 }
 
 .user-list > li:hover,
-.user-list > li.active{
-    background:#ddd;
+.user-list > li.active {
+    background: #ddd;
 }
 
 .sec_topr_tab {
@@ -8949,6 +8952,7 @@ table .upload-btn {
     height: 58px;
     width: 308px;
 }
+
 .sec_topr_tab li {
     border-left: 1px solid #eee;
     float: left;
@@ -8956,6 +8960,7 @@ table .upload-btn {
     margin-left: -1px;
     width: 77px;
 }
+
 .sec_topr_tab li a {
     color: #333;
     display: block;
@@ -8966,12 +8971,14 @@ table .upload-btn {
     text-align: center;
     width: 34px;
 }
+
 .sec_topr_tab .on a {
     color: #717171;
     font-weight: bold;
 }
+
 .index_ico_arrow {
-    background:url(/static/images/tab-jt.png) no-repeat 0 0;
+    background: url(/static/images/tab-jt.png) no-repeat 0 0;
     display: inline-block;
     height: 6px;
     left: 38px;
@@ -8979,148 +8986,153 @@ table .upload-btn {
     top: 60px;
     width: 13px;
 }
-.sec_top_p{
-    margin:15px 0 5px;
-    color:#333!important;
-    text-indent:21px;
-    text-align:left;
+
+.sec_top_p {
+    margin: 15px 0 5px;
+    color: #333 !important;
+    text-indent: 21px;
+    text-align: left;
 }
 
-.company-payment-info > li{
-    float:left;
-    width:50%;
-    height:30px;
-    line-height:30px;
-    margin-bottom:10px;
-    color:#999;
+.company-payment-info > li {
+    float: left;
+    width: 50%;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    color: #999;
 }
 
-.company-payment-info > li > span{
-    color:#666;
+.company-payment-info > li > span {
+    color: #666;
 }
 
-.list .right .hd-btn{
-    height:30px;
-    line-height:30px;
-    padding:0 10px;
-    margin:10px 10px 10px 0;
-    background:#717171;
-    color:#fff;
-    text-indent:0;
+.list .right .hd-btn {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    margin: 10px 10px 10px 0;
+    background: #717171;
+    color: #fff;
+    text-indent: 0;
     text-align: center;
 }
 
-.list .right .hd-btn:hover{
-    background:#00ad29;
+.list .right .hd-btn:hover {
+    background: #00ad29;
 }
 
-#MsgDot{
-    position:absolute;
-    left:75px;
-    top:20px;
-    width:20px;
-    height:20px;
-    line-height:20px;
+#MsgDot {
+    position: absolute;
+    left: 75px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    background:#64cbb3;
-    text-align:center;
-    font-size:12px;
-    color:#fff;
+    background: #64cbb3;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
 }
 
-.my-diary-step{
-    position:relative;
-    width:905px;
-    border:0;
-    border-bottom: 1px solid #eaeaea;
-    margin:20px;
-    padding:0;
-}
-
-.my-diary-step .diary-step-box{
+.my-diary-step {
     position: relative;
-    float:left;
-    width:auto;
-    border:0;
-    padding-bottom:20px;
-    overflow:hidden;
+    width: 905px;
+    border: 0;
+    border-bottom: 1px solid #eaeaea;
+    margin: 20px;
+    padding: 0;
 }
 
-.my-diary-step .step{
-    float:left;
-    overflow:hidden;
+.my-diary-step .diary-step-box {
+    position: relative;
+    float: left;
+    width: auto;
+    border: 0;
+    padding-bottom: 20px;
+    overflow: hidden;
 }
 
-.my-diary-step .step li{
-    margin:0 0 0 10px;
+.my-diary-step .step {
+    float: left;
+    overflow: hidden;
 }
 
-.my-diary-step .step li:first-child{
-    margin:0;
+.my-diary-step .step li {
+    margin: 0 0 0 10px;
 }
 
-.my-diary-step .step li.active:hover{
+.my-diary-step .step li:first-child {
+    margin: 0;
+}
+
+.my-diary-step .step li.active:hover {
     background: #717171;
     border: 3px solid #b6e2ac;
 }
 
-.my-diary-step .step li:hover{
+.my-diary-step .step li:hover {
     background: #afafaf;
     border: 3px solid #d7d7d7;
 }
 
-.my-diary-step div.line{
-    width:100%;
-    top:43%;
-}
-.contract-info-box{
-    margin-bottom:10px!important;
+.my-diary-step div.line {
+    width: 100%;
+    top: 43%;
 }
 
-.coninform .contract-desc{
-    position:relative;
-    width:876px;
-    padding:10px;
-    margin-bottom:50px;
+.contract-info-box {
+    margin-bottom: 10px !important;
 }
 
-.pay-way{
+.coninform .contract-desc {
+    position: relative;
+    width: 876px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.pay-way {
     cursor: pointer;
 }
-.personal_list .inforcon .li-col3 .contract-desc-li{
-    width:923px;
-    height:auto;
-    padding:10px;
-    line-height:25px;
-    color:#171717;
-    overflow:hidden;
-}
-.inline-label{
-    display:inline-block;
-    width:150px!important;
-    text-align:right;
-    text-indent:0;
+
+.personal_list .inforcon .li-col3 .contract-desc-li {
+    width: 923px;
+    height: auto;
+    padding: 10px;
+    line-height: 25px;
+    color: #171717;
+    overflow: hidden;
 }
 
-.registbox .box span{
-    width:90px;
+.inline-label {
+    display: inline-block;
+    width: 150px !important;
+    text-align: right;
+    text-indent: 0;
 }
 
-.registbox .box input{
-    width:223px;
-}
-.registbox .mobile-register-captcha{
-    height:auto;
-    left:auto;
+.registbox .box span {
+    width: 90px;
 }
 
-.pub-btn{
+.registbox .box input {
+    width: 223px;
+}
+
+.registbox .mobile-register-captcha {
+    height: auto;
+    left: auto;
+}
+
+.pub-btn {
     background: #64cbb3 !important;
 }
 
-.pub-btn:hover{
+.pub-btn:hover {
     background: #2b7284 !important;
 
 }
