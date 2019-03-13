@@ -6,7 +6,7 @@ __author__ = 'apolo'
 
 from random import randint
 from django.core.mail import send_mail
-from OlineEdu.settings import EMAIL_FROM
+from OnlineEdu.settings import EMAIL_FROM
 from users.models import EmailVerifyRecord
 
 

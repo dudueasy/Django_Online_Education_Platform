@@ -1,5 +1,5 @@
 """
-WSGI config for OlineEdu project.
+WSGI config for OnlineEdu project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "OlineEdu.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "OnlineEdu.settings")
 
 application = get_wsgi_application()

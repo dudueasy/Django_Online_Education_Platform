@@ -1,6 +1,6 @@
 # _*_ encoding:utf-8 _*_
 
-"""OlineEdu URL Configuration
+"""OnlineEdu URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.9/topics/http/urls/
@@ -19,7 +19,7 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from django.views.generic import TemplateView
 from django.views.static import serve
-from OlineEdu.settings import MEDIA_ROOT
+from OnlineEdu.settings import MEDIA_ROOT
 
 from users.views import (LoginView, LogoutView, RegisterView, ActiveUserView,
                          ForgetPwdView, ResetView, ModifyPwdView, IndexView, view_locale)
@@ -56,7 +56,7 @@ urlpatterns = [
     url(r'^media/(?P<path>.*/$)', serve, {"document_root": MEDIA_ROOT}),
 
     # 用来代理静态的访问处理函数, 在生产模式使用, 在开发模式禁用.
-    # from OlineEdu.settings import STATIC_ROOT
+    # from OnlineEdu.settings import STATIC_ROOT
     # url(r'^static/(?P<path>.*/$)', serve, {"document_root": STATIC_ROOT}),
 
     # 用来检测服务器环境语言的函数
